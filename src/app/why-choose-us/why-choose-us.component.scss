@@ -9,6 +9,13 @@
   img{
     width: 80%;
   }
+  .main-img{
+    position: absolute;
+    top: 46%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+  }
 }
 .why-box{
   background-color: #F6F8FA;

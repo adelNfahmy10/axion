@@ -1,13 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { AboutComponent } from "../../about/about.component";
-import { ServiceComponent } from "../../service/service.component";
 import { FeatureComponent } from "../../feature/feature.component";
 import { NavbarComponent } from "../../navbar/navbar.component";
 import { HomeComponent } from "../../home/home.component";
 import { FooterComponent } from "../../footer/footer.component";
-import { AppDownloadComponent } from "../../app-download/app-download.component";
-import { AllLogoComponent } from "../../all-logo/all-logo.component";
-import { CeoComponent } from "../../ceo/ceo.component";
 import { WhyChooseUsComponent } from "../../why-choose-us/why-choose-us.component";
 import { ActivatedRoute } from '@angular/router';
 import { OurWorkComponent } from "../../our-work/our-work.component";
@@ -17,7 +13,7 @@ import { RequestMeetingComponent } from "../../request-meeting/request-meeting.c
 @Component({
   selector: 'app-blank',
   standalone: true,
-  imports: [AboutComponent, FeatureComponent, NavbarComponent, HomeComponent, FooterComponent, AllLogoComponent, CeoComponent, WhyChooseUsComponent, OurWorkComponent, PartnersComponent, RequestMeetingComponent],
+  imports: [AboutComponent, FeatureComponent, NavbarComponent, HomeComponent, FooterComponent, WhyChooseUsComponent, OurWorkComponent, PartnersComponent, RequestMeetingComponent],
   templateUrl: './blank.component.html',
   styleUrl: './blank.component.scss'
 })

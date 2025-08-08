@@ -1,4 +1,4 @@
-$mainColor:#FBB819;
+$mainColor:#1824AA;
 *{
   transition: all .3s;
 }
@@ -6,6 +6,9 @@ nav{
   background-color: #ffffff4d;
   backdrop-filter: blur(20px);
   z-index: 9999;
+  .logo{
+    width: 150px;
+  }
   .navbar-toggler-icon{
     background: none;
   }

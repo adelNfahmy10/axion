@@ -2,6 +2,9 @@ $mainColor:#55508d;
 footer{
   background-color: #FBFBFB;
   .logo{
+    .logo-img{
+      width: 200px;
+    }
     p{
       color: #1F2E47;
       line-height: 20px;
@@ -25,5 +28,8 @@ footer{
   .copy-right{
     background-color: $mainColor;
     color: #fff;
+  }
+  .fa-location-dot{
+    color: $mainColor;
   }
 }

@@ -1,6 +1,5 @@
 import { isPlatformBrowser, NgClass, NgFor, NgStyle } from '@angular/common';
 import { Component, HostListener, inject, PLATFORM_ID } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -25,7 +24,7 @@ export class NavbarComponent{
       this.navbarWidth = '100%';
       this.navbarLeft = '0';
       this.navbarTop = '0';
-      this.background = '#55508d'
+      this.background = '#019fe35f'
     } else {
       this.navbarWidth = '75%';
       this.navbarLeft = '12.5%';

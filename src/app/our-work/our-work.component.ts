@@ -10,7 +10,7 @@ import { SwiperOptions } from 'swiper/types';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class OurWorkComponent {
- swiperConfig: SwiperOptions = {
+  swiperConfig: SwiperOptions = {
     slidesPerView: 4,
     spaceBetween: 20,
     centeredSlides: true,

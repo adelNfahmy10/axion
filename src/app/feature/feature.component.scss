@@ -7,15 +7,25 @@ $main-color:#55508D;
       color: $main-color;
     }
     h6{
-      font-size: 38px;
+      font-size: 30px;
       color: $main-color;
     }
   }
+  swiper-slide{
+    height: 430px;
+  }
   .feature-box{
     position: relative;
+    .feature-image{
+      img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
     .feature-title{
       h5{
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
         margin-bottom: 0;
         color: $main-color;

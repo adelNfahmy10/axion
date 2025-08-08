@@ -11,24 +11,24 @@ import { SwiperOptions } from 'swiper/types';
 })
 export class AllLogoComponent {
   swiperConfig: SwiperOptions = {
-    slidesPerView: 10,
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop:true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false
+  slidesPerView: 3,
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    breakpoints: {
-      1200: {
-        slidesPerView: 10,
-      },
-      768: {
-        slidesPerView: 5,
-      },
-      0: {
-        slidesPerView: 3,
-      }
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
     }
-  };
+  }
+};
 }
