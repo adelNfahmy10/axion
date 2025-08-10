@@ -10,17 +10,23 @@ import { Component, HostListener, inject, PLATFORM_ID } from '@angular/core';
 })
 export class NavbarComponent{
   private readonly _PLATFORM_ID = inject(PLATFORM_ID)
+  navbarWidth:string = '100%'
   navbarTop:string = '0'
   background:string = 'transparent'
   lastScrollTop = 0;
+  isNavbarVisible = true;
 
   @HostListener('window:scroll') onScroll(){
     const scrollPosition = window.scrollY;
 
     if (scrollPosition > 200) {
-      this.background = '#1286957a'
+      this.navbarWidth = '100%';
+      this.navbarTop = '0';
+      this.background = '#55508d'
     } else {
-      this.background = 'transparent'
+      this.navbarWidth = '75%';
+      this.navbarTop = '15px';
+      this.background = '#ffffff4d'
     }
 
     if (scrollPosition > this.lastScrollTop) {
@@ -30,6 +36,8 @@ export class NavbarComponent{
     } else {
       if(this.lastScrollTop > 200){
         this.navbarTop = '0';
+      } else {
+        this.navbarTop = '15px';
       }
     }
 

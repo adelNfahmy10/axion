@@ -1,46 +1,76 @@
-$mainColor:#FBB819;
+// $mainColor:#FBB819;
+// .about{
+//   .about-img{
+//     position: relative;
+//     img{
+//       position: relative;
+//       width: 80%;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%);
+//       z-index: 2;
+//       &.line-img{
+//         position: absolute;
+//         top: 0;
+//         left: 50%;
+//         transform: translate(-50%);
+//         z-index: 2;
+//         width: 100%;
+//         z-index: 1;
+//       }
+//     }
+//   }
+//   .about-info{
+//     .line{
+//       width: 20px;
+//       height: 6px;
+//       background-color: #55508D;
+//       position: relative;
+//       top: 40%;
+//       transform: translateY(-50%);
+//     }
+//     .content-about{
+//       h3{
+//         color: #55508D;
+//       }
+//       p{
+//         font-size: 20px;
+//       }
+//     }
+//   }
+// }
+
+$mainColor : #128695;
+$second-color:#1286957a;
 .about{
+  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000), url('../../assets/image/about-image/about-bg.jpg');
+  background-size: cover;
+  .container{
+    backdrop-filter: blur(20px);
+  }
   .about-img{
-    position: relative;
     img{
-      position: relative;
-      width: 80%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: 2;
-      &.line-img{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: 2;
-        width: 100%;
-        z-index: 1;
-      }
+      width: 85%;
     }
   }
   .about-info{
-    .line{
-      width: 20px;
-      height: 6px;
-      background-color: #55508D;
-      position: relative;
-      top: 40%;
-      transform: translateY(-50%);
-    }
-    .content-about{
-      h3{
-        color: #55508D;
+    .about-title{
+      border: 1px solid $mainColor;
+      width: fit-content;
+      .line{
+        width: 20px;
+        height: 8px;
+        margin-top: 12px;
       }
+      h3{
+        font-size: 24px;
+      }
+    }
+
+    .about-content{
       p{
-        font-size: 20px;
+        color: #ccc;
       }
     }
   }
 }
-
-
-
-
-

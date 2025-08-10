@@ -1,36 +1,24 @@
-.title{
-  span{
-    background-color: #55508D;
-    color: #fff;
-    height: fit-content;
+$mainColor : #128695;
+$second-color:#1286957a;
+.why-us{
+  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000), url('../../assets/image/about-image/about-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  .title{
+    span{
+      height: fit-content;
+    }
   }
-}
-.why-image{
-  img{
-    width: 80%;
+  .why-box{
+    backdrop-filter: blur(10px);
+    img{
+      width:40px;
+    }
+    h5{
+      font-size: 22px;
+    }
+    p{
+      color: #ccc;
+    }
   }
-  .main-img{
-    position: absolute;
-    top: 46%;
-    left: 0;
-    transform: translate(0, -50%);
-    border-radius: 20px;
-  }
-}
-.why-box{
-  background-color: #F6F8FA;
-  h5{
-    font-size: 24px;
-  }
-  p{
-    margin: 12px 0 0;
-    font-size: 20px;
-  }
-}
-.arrow-link{
- & > div{
-  border: 1px solid #0039C7;
-  width: 30px;
-  height: 30px;
- }
 }

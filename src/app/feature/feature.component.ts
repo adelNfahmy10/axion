@@ -66,28 +66,4 @@ export class FeatureComponent {
       description: 'Continuous technical support to ensure your website and platforms run smoothly 24/7.'
     }
   ];
-
-
-
-  swiperConfig: SwiperOptions = {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    centeredSlides: true,
-    loop:true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      }
-    }
-  };
 }

@@ -1,250 +1,40 @@
 <section class="feature py-5" id="feature">
   <div class="container">
-    <div class="title wow fadeInDown">
+    <div class="title text-white wow fadeInDown">
       <h5>FEATURES</h5>
       <h6>Smart, scalable, and creative digital solutions, all in one place.</h6>
     </div>
-    <!-- <div class="row g-3">
-      <div class="col-md-3 wow fadeInLeft">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/social-icon.png" class="w-100" alt="">
+    <swiper-container class="mySwiper w-100" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" loop="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+      @for (feature of features; track $index) {
+        <swiper-slide class="shadow rounded-3 overflow-hidden">
+          <div class="feature-box h-100 p-3 rounded-3 text-center">
+            <!-- Feature Image -->
+            <div class="feature-image">
+              <img [src]="feature.image" alt="{{ feature.title }}">
+            </div>
+
+            <!-- Feature Title -->
+            <div class="feature-title my-3">
+              <h6 class="fw-bold mb-0">{{ feature.title }}</h6>
+            </div>
+
+            <!-- Feature Description -->
+            <div class="feature-description">
+              <p class="mb-0">{{ feature.description }}</p>
+            </div>
+
+            <!-- Feature Footer -->
+            <div class="feature-footer main-bg position-absolute bottom-0 end-0 cr px-4 py-2 text-white d-flex justify-content-center align-items-center gap-2">
+              <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Explore Services</span>
+            </div>
           </div>
-
-          <div class="feature-title">
-            <h5>Social Media Excellence</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>We manage your social presence with creative content, consistent branding, and active engagement to grow your audience.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInUp">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/graphic-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Creative Graphic Design</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>From eye-catching visuals to compelling brand identity, our designs speak your message loud and clear.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/motion-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Motion Graphics & Video</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Deliver your message with dynamic, engaging motion videos that capture attention and boost your brand.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/web-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Modern Website Development</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Fast, secure, and responsive websites built with the latest technologies to reflect your vision.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-              <img src="../../assets/image/feature-image/e-commerce-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>E-Commerce Solutions</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Custom online stores that convert visitors into loyal customers — smooth, scalable, and easy to manage.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-              <img src="../../assets/image/feature-image/digital-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Digital Advertising Campaigns</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Targeted ad strategies to maximize your reach and return on investment across all major platforms.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/seo-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>SEO Optimization</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Rank higher on search engines and increase visibility with data-driven SEO strategies.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-              <img src="../../assets/image/feature-image/branding-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Branding & Identity Design</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Build a strong, recognizable brand with logos, colors, and visuals that stand out.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-md-3 wow fadeInRight">
-        <div class="feature-box h-100 bg-white p-5 pt-4 rounded-3 overflow-hidden text-center d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="feature-image">
-            <img src="../../assets/image/feature-image/technical-icon.png" class="w-100" alt="">
-          </div>
-
-          <div class="feature-title">
-            <h5>Technical Support & Maintenance</h5>
-          </div>
-
-          <div class="feature-description">
-            <p>Continuous technical support to ensure your website and platforms run smoothly 24/7.</p>
-          </div>
-
-          <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center">
-            <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Explore Services</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <swiper-container class="mySwiper w-100 h-100 py-3 wow fadeInDown" [slides-per-view]="swiperConfig.slidesPerView"
-  space-between="20"
-  [breakpoints]="swiperConfig.breakpoints"
-  autoplay-delay="2500" autoplay-disable-on-interaction="false">
-  @for (feature of features; track $index) {
-    <swiper-slide class="bg-white">
-      <div class="feature-box h-100 p-3 rounded-3 text-center">
-        <!-- Feature Image -->
-        <div class="feature-image">
-          <img [src]="feature.image" alt="{{ feature.title }}">
-        </div>
-
-        <!-- Feature Title -->
-        <div class="feature-title my-3">
-          <h5 class="fw-bold">{{ feature.title }}</h5>
-        </div>
-
-        <!-- Feature Description -->
-        <div class="feature-description">
-          <p class="text-muted mb-0">{{ feature.description }}</p>
-        </div>
-
-        <!-- Feature Footer -->
-        <div class="feature-footer cr px-4 py-2 text-white rounded-top-3 d-flex justify-content-center align-items-center gap-2">
-          <svg width="15" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.48436 1.00001L16.9697 9.48528M16.9697 9.48528L8.48436 17.9706M16.9697 9.48528L-0.000882264 9.48528" stroke="#FBB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Explore Services</span>
-        </div>
-      </div>
-    </swiper-slide>
-  }
-  </swiper-container>
+        </swiper-slide>
+      }
+    </swiper-container>
   </div>
 </section>

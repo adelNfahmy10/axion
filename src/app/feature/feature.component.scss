@@ -1,21 +1,83 @@
-$main-color:#55508D;
+// $mainColor:#55508D;
+// .feature{
+//   background-color : #F6F8FA;
+//   .title{
+//     h5{
+//       font-size: 16px;
+//       color: $mainColor;
+//     }
+//     h6{
+//       font-size: 30px;
+//       color: $mainColor;
+//     }
+//   }
+//   swiper-slide{
+//     height: 470px;
+//   }
+//   .feature-box{
+//     position: relative;
+//     .feature-image{
+//       img{
+//         width: 200px;
+//         height: 200px;
+//         object-fit: cover;
+//       }
+//     }
+//     .feature-title{
+//       h5{
+//         font-size: 22px;
+//         font-weight: 700;
+//         margin-bottom: 0;
+//         color: $mainColor;
+//       }
+//     }
+//     .feature-footer{
+//       background-color: $main-color;
+//       position: absolute;
+//       right: 0;
+//       bottom: 0;
+//     }
+//   }
+// }
+
+// @media (max-width:576px) {
+//   h6{
+//     font-size: 30px !important;
+//   }
+//   .feature-title{
+//     h5{
+//       font-size: 24px !important;
+//     }
+//   }
+// }
+
+$mainColor : #128695;
+$second-color:#1286957a;
 .feature{
-  background-color : #F6F8FA;
+  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000), url('../../assets/image/about-image/about-bg.jpg');
+  background-size: cover;
+  background-position: center center;
   .title{
     h5{
       font-size: 16px;
-      color: $main-color;
     }
     h6{
       font-size: 30px;
-      color: $main-color;
+      text-transform: capitalize;
     }
   }
-  swiper-slide{
-    height: 470px;
+  swiper-container {
+    width: 100%;
+    swiper-slide {
+      backdrop-filter: blur(20px);
+      width: 300px;
+      height: 470px;
+    }
   }
+
   .feature-box{
     position: relative;
+    color: #fff !important;
     .feature-image{
       img{
         width: 200px;
@@ -24,29 +86,12 @@ $main-color:#55508D;
       }
     }
     .feature-title{
-      h5{
+      h6{
         font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 0;
-        color: $main-color;
       }
     }
     .feature-footer{
-      background-color: $main-color;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-  }
-}
-
-@media (max-width:576px) {
-  h6{
-    font-size: 30px !important;
-  }
-  .feature-title{
-    h5{
-      font-size: 24px !important;
+      border-top-left-radius: 10px;
     }
   }
 }

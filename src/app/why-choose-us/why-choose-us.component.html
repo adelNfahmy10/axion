@@ -1,76 +1,23 @@
 <section id="why-us" class="why-us py-5">
   <div class="container">
+    <div class="title text-white d-flex gap-1">
+      <span class="px-3 py-1 rounded-5 main-bg">Why</span>
+      <h3>Choose<br>Us.</h3>
+    </div>
     <div class="row g-3">
-      <div class="col-lg-6 wow fadeInDown">
-        <div class="title d-flex gap-3">
-          <span class="px-3 py-1 rounded-5">Why</span>
-          <h3>Why<br>Choose<br>Us.</h3>
-        </div>
-        <div class="why-image d-flex justify-content-center align-items-center position-relative">
-          <img src="assets/image/why-chooes-us-image/background-why-us.png" alt="taibaconnect">
-          <img src="assets/image/why-chooes-us-image/why-choose-us.jpg" class="main-img" alt="w-100">
-        </div>
-
-      </div>
-      <div class="col-lg-6">
-        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-          <div class="why-box wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
+      @for (item of whyItems; track $index) {
+        <div class="col-md-6">
+          <div class="why-box shadow text-white wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
             <div class="why-info">
-              <h5>Tailored Digital Solutions</h5>
-              <p>Everything we build is customized to fit your business needs — no templates, just strategy.</p>
-            </div>
-            <div class="arrow-link d-flex justify-content-center align-items-center">
-              <div class="d-flex justify-content-center align-items-center rounded-circle cr">
-                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1.00001L8 1M8 1L7.99999 8M8 1L1.00001 7.99999" stroke="#0039C7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img [src]="item.icon" [alt]="item.alt">
+                <h5 class="mb-0">{{item.title}}</h5>
               </div>
-            </div>
-          </div>
-
-          <div class="why-box wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
-            <div class="why-info">
-              <h5>Creative Design Expertise</h5>
-              <p>From branding to social media visuals, our designs are made to impress and convert.</p>
-            </div>
-            <div class="arrow-link d-flex justify-content-center align-items-center">
-              <div class="d-flex justify-content-center align-items-center rounded-circle cr">
-                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1.00001L8 1M8 1L7.99999 8M8 1L1.00001 7.99999" stroke="#0039C7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="why-box wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
-            <div class="why-info">
-              <h5>Performance-First Development</h5>
-              <p>We develop websites and apps that load fast, work smoothly, and scale with your business.</p>
-            </div>
-            <div class="arrow-link d-flex justify-content-center align-items-center">
-              <div class="d-flex justify-content-center align-items-center rounded-circle cr">
-                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1.00001L8 1M8 1L7.99999 8M8 1L1.00001 7.99999" stroke="#0039C7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="why-box wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
-            <div class="why-info">
-              <h5>Complete Marketing Ecosystem</h5>
-              <p>SEO, social media, content — we connect it all under one plan to maximize impact.</p>
-            </div>
-            <div class="arrow-link d-flex justify-content-center align-items-center">
-              <div class="d-flex justify-content-center align-items-center rounded-circle cr">
-                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1.00001L8 1M8 1L7.99999 8M8 1L1.00001 7.99999" stroke="#0039C7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
+              <p>{{item.desc}}</p>
             </div>
           </div>
         </div>
-      </div>
+      }
     </div>
   </div>
 </section>
