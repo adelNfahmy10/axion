@@ -8,12 +8,11 @@ import { WhyChooseUsComponent } from "../../why-choose-us/why-choose-us.componen
 import { ActivatedRoute } from '@angular/router';
 import { OurWorkComponent } from "../../our-work/our-work.component";
 import { PartnersComponent } from "../../partners/partners.component";
-import { RequestMeetingComponent } from "../../request-meeting/request-meeting.component";
 
 @Component({
   selector: 'app-blank',
   standalone: true,
-  imports: [AboutComponent, FeatureComponent, NavbarComponent, HomeComponent, FooterComponent, WhyChooseUsComponent, OurWorkComponent, PartnersComponent, RequestMeetingComponent],
+  imports: [AboutComponent, FeatureComponent, NavbarComponent, HomeComponent, FooterComponent, WhyChooseUsComponent, OurWorkComponent, PartnersComponent],
   templateUrl: './blank.component.html',
   styleUrl: './blank.component.scss'
 })

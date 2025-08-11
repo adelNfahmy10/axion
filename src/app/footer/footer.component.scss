@@ -1,21 +1,22 @@
-$mainColor:#55508d;
+$mainColor : #128695;
+$second-color:#1286957a;
+
 footer{
-  background-color: #FBFBFB;
+  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000), url('../../assets/image/about-image/about-bg.jpg');
+  background-size: cover;
+  background-position: center center;
   .logo{
     .logo-img{
       width: 200px;
     }
     p{
-      color: #1F2E47;
-      line-height: 20px;
+      color: #ccc;
     }
   }
-  .touch{
-    li{
-      font-size: 14px;
-    }
+  li{
+    font-size: 14px;
+    color: #ccc;
   }
-
   .footer-icons{
     transition: all .3s;
   }
