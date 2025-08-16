@@ -84,13 +84,10 @@ export class NavbarComponent{
   }
 
   // Translation Code
-  lang: string = localStorage.getItem('lang') || 'en';
-  saveLang:any = localStorage.setItem('lang', this.lang)
+  lang: string =  'en';
   switchLang() {
     this.lang = this.lang === 'en' ? 'ar' : 'en';
-    this.saveLang = localStorage.setItem('lang', this.lang)
     this._TranslateService.use(this.lang);
-    // التحكم في اتجاه الصفحة
     const htmlTag = document.documentElement;
     if (this.lang === 'en') { htmlTag.setAttribute('dir', 'ltr');
       htmlTag.setAttribute('lang', 'en');
