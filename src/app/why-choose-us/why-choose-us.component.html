@@ -10,7 +10,7 @@
           <div class="why-box shadow text-white wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
             <div class="why-info">
               <div class="d-flex align-items-center gap-2 mb-2">
-                <img [src]="item.icon" [alt]="item.alt | translate">
+                <img loading="lazy" [src]="item.icon" [alt]="item.alt | translate">
                 <h5 class="mb-0">{{item.title | translate}}</h5>
               </div>
               <p>{{item.desc | translate}}</p>

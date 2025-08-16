@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "title":"Tech2Earn",
     "home": "Home",
     "about": "About",
     "whyUs": "Why Choose Us",
@@ -19,7 +20,8 @@
     "heading": "Innovative Designs. Smart Strategies. Real Impact.",
     "text": "At 'Tech2Earn' we provide complete digital solutions that help businesses grow and thrive in the digital world. From engaging social media designs and custom websites and apps to powerful SEO strategies — we deliver every project with passion and precision.",
     "text2": "We’re more than just a service provider — we’re your partner in digital success.",
-    "contactUs" : "Contact Us"
+    "contactUs" : "Contact Us",
+    "companyTitle": "Tech2Earn"
   },
   "whyUs": {
     "why":"Why",
