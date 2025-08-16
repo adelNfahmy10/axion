@@ -17,7 +17,7 @@
     <ul class="navbar-nav mx-auto gap-4">
       @for ( section of sections; track $index) {
         <li class="nav-item">
-          <a class="nav-link px-0"
+          <a class="nav-link rounded-2 px-3 px-sm-0"
             href="javascript:void(0)"
             (click)="scrollToSection(section.id)"
             [ngClass]="{'active': activeLink === section.id}">
@@ -27,11 +27,11 @@
       }
     </ul>
 
-    <ul class="navbar-nav justify-content-center gap-2">
+    <ul class="navbar-nav d-flex justify-content-center gap-3 mt-2 mt-sm-0">
       <li class="nav-item">
         <button class="btn btn-lang py-0 px-3 rounded-pill text-white" (click)="switchLang()">{{lang.toUpperCase()}}</button>
       </li>
-      <li class="nav-item d-flex justify-content-center align-items-center">
+      <li class="nav-item d-flex align-items-center">
         <button class="second-btn rounded-5">
           <a class="text-white">{{'navbar.getStart' | translate}}</a>
         </button>
