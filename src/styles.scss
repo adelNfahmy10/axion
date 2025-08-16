@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 $mainColor: #128695;
+html[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
 *{
   font-family: "Raleway", sans-serif;
 }

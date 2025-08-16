@@ -3,7 +3,6 @@ import { isPlatformBrowser, NgClass } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NgwWowService } from 'ngx-wow';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,

@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row g-0">
       <div class="col-12 text-white wow fadeInDown">
-        <h3>Our Partners</h3>
+        <h3>{{'partners.title' | translate}}</h3>
       </div>
       @if(isBrowser){
         <div class="col-12 wow fadeInUp">
-          <swiper-container class="mySwiper py-3" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
+          <swiper-container dir=ltr class="mySwiper py-3" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
             [space-between]="swiperConfig.spaceBetween"
             [breakpoints]="swiperConfig.breakpoints"
             [loop]="swiperConfig.loop"
@@ -381,7 +381,7 @@
         </div>
 
         <div class="col-12 wow fadeInUp">
-          <swiper-container class="mySwiper py-3" dir="rtl" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
+          <swiper-container dir="rtl" class="mySwiper py-3" dir="rtl" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
             [space-between]="swiperConfig.spaceBetween"
             [breakpoints]="swiperConfig.breakpoints"
             [loop]="swiperConfig.loop"
@@ -642,7 +642,7 @@
         </div>
 
         <div class="col-12 wow fadeInUp">
-          <swiper-container class="mySwiper py-3" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
+          <swiper-container dir="ltr" class="mySwiper py-3" loop="true" [slides-per-view]="swiperConfig.slidesPerView"
             [space-between]="swiperConfig.spaceBetween"
             [breakpoints]="swiperConfig.breakpoints"
             [loop]="swiperConfig.loop"

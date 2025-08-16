@@ -1,11 +1,12 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-our-work',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './our-work.component.html',
   styleUrl: './our-work.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]

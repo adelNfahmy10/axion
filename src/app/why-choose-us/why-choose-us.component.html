@@ -1,8 +1,8 @@
 <section id="why-us" class="why-us py-5">
   <div class="container">
     <div class="title text-white d-flex gap-1">
-      <span class="px-3 py-1 rounded-5 main-bg">Why</span>
-      <h3>Choose<br>Us.</h3>
+      <span class="px-3 py-1 rounded-5 main-bg">{{'whyUs.why' | translate}}</span>
+      <h3>{{'whyUs.chooseUs' | translate}}</h3>
     </div>
     <div class="row g-3">
       @for (item of whyItems; track $index) {
@@ -10,10 +10,10 @@
           <div class="why-box shadow text-white wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
             <div class="why-info">
               <div class="d-flex align-items-center gap-2 mb-2">
-                <img [src]="item.icon" [alt]="item.alt">
-                <h5 class="mb-0">{{item.title}}</h5>
+                <img [src]="item.icon" [alt]="item.alt | translate">
+                <h5 class="mb-0">{{item.title | translate}}</h5>
               </div>
-              <p>{{item.desc}}</p>
+              <p>{{item.desc | translate}}</p>
             </div>
           </div>
         </div>

@@ -1,23 +1,24 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-partners',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './partners.component.html',
   styleUrl: './partners.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PartnersComponent implements OnInit{
-    private readonly _PLATFORM_ID = inject(PLATFORM_ID)
+  private readonly _PLATFORM_ID = inject(PLATFORM_ID)
 
-    isBrowser = false;
+  isBrowser = false;
 
-    ngOnInit(): void {
-      this.isBrowser = isPlatformBrowser(this._PLATFORM_ID)
-    }
+  ngOnInit(): void {
+    this.isBrowser = isPlatformBrowser(this._PLATFORM_ID)
+  }
 
   swiperConfig: SwiperOptions = {
     slidesPerView: 9,

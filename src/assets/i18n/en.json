@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "whyUs": "Why Choose Us",
+    "features": "Features",
+    "ourWork": "Our Work",
+    "partners": "Our Partners",
+    "getStart": "Get Start"
+  },
+  "hero": {
+    "title": "Smart software solutions to take your business into the future",
+    "subtitle": "Comprehensive web solutions, from websites and online stores to advanced ERP and POS systems, designed to grow your business.",
+    "startNow": "Start Now",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Innovative Designs. Smart Strategies. Real Impact.",
+    "text": "At 'Tech2Earn' we provide complete digital solutions that help businesses grow and thrive in the digital world. From engaging social media designs and custom websites and apps to powerful SEO strategies — we deliver every project with passion and precision.",
+    "text2": "We’re more than just a service provider — we’re your partner in digital success.",
+    "contactUs" : "Contact Us"
+  },
+  "whyUs": {
+    "why":"Why",
+    "chooseUs":"Choose Us.",
+    "title": "Why Choose Us.",
+    "items": {
+      "tailoredTitle": "Tailored Digital Solutions",
+      "tailoredDesc": "Everything we build is customized to fit your business needs — no templates, just strategy.",
+      "creativeTitle": "Creative Design Expertise",
+      "creativeDesc": "From branding to social media visuals, our designs are made to impress and convert.",
+      "performanceTitle": "Performance-First Development",
+      "performanceDesc": "We develop websites and apps that load fast, work smoothly, and scale with your business.",
+      "ecosystemTitle": "Complete Marketing Ecosystem",
+      "ecosystemDesc": "SEO, social media, content — we connect it all under one plan to maximize impact."
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Smart, scalable, and creative digital solutions, all in one place.",
+    "items": {
+      "supportTitle": "Technical Support & Maintenance",
+      "supportDesc": "We provide continuous technical support and proactive maintenance to ensure your digital platforms run smoothly and efficiently.",
+
+      "socialTitle": "Social Media Excellence",
+      "socialDesc": "We manage your social presence with creative content, consistent branding, and active engagement to grow your audience.",
+
+      "motionTitle": "Motion Graphics & Video",
+      "motionDesc": "We craft engaging motion graphics and videos that capture attention and bring your brand’s story to life.",
+
+      "designTitle": "Creative Graphic Design",
+      "designDesc": "We design eye-catching visuals and graphics that align with your brand identity and leave a lasting impression.",
+
+      "webTitle": "Modern Website Development",
+      "webDesc": "We build fast, responsive, and user-friendly websites tailored to your business goals and customer needs.",
+
+      "ecommerceTitle": "E-Commerce Solutions",
+      "ecommerceDesc": "We develop scalable and secure e-commerce platforms that provide seamless shopping experiences for your customers.",
+
+      "adsTitle": "Digital Advertising Campaigns",
+      "adsDesc": "We create data-driven ad campaigns across multiple platforms to maximize your reach and return on investment.",
+
+      "seoTitle": "SEO Optimization",
+      "seoDesc": "We optimize your website for search engines to improve visibility, attract organic traffic, and increase conversions.",
+
+      "brandingTitle": "Branding & Identity Design",
+      "brandingDesc": "We craft unique branding strategies and designs that define your identity and set you apart from competitors."
+    },
+    "explore": "Explore Services"
+  },
+  "ourWork": {
+    "title": "Our Work",
+    "project": "Tech2Earn"
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "footer":{
+    "info":{
+      "name": "Tech2Earn",
+      "description": "We bring your brand to life with creative social media designs, custom websites, mobile apps, and SEO that drives results."
+    },
+    "services": {
+      "title": "Services",
+      "list": {
+        "Professional": "Professional Social Media Management",
+        "Graphic": "Eye-Catching Graphic Design",
+        "Motion": "Motion Graphics & Video Production",
+        "Website": "Website Development",
+        "ECommerce": "E-Commerce Store Development",
+        "Digital":"Digital Advertising & Campaigns",
+        "SEO": "SEO (Search Engine Optimization)",
+        "Branding" : "Branding & Visual Identity",
+        "Technical": "Technical Support & Maintenance"
+      }
+    },
+    "solutions": {
+      "title": "Solutions",
+      "list": {
+        "Technical": "Technical Support Services",
+        "Infrastructure" : "Infrastructure Services",
+        "Network": "Network Telephony Solutions",
+        "Smart": "Smart resources",
+        "Digital" : "Digital Marketing"
+      }
+    },
+    "contact": {
+      "phone": "+966559065802",
+      "email": "med.abdelkader@2earn.cash",
+      "address": "Minarat Al-Ma'rifah Building No. 402, Third Floor - King Abdulaziz University - Jeddah",
+      "footer": "Tech2Earn Team © 2025"
+    }
+  }
+}
