@@ -40,13 +40,16 @@
   </button>
   <div class="collapse navbar-collapse list-Item" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto gap-4">
-      <li class="nav-item" *ngFor="let section of sections">
-        <a class="nav-link px-0"
-           (click)="scrollToSection(section.id)"
-           [ngClass]="{'active': activeLink === section.id}">
-          {{ section.name }}
-        </a>
-      </li>
+      @for ( section of sections; track $index) {
+        <li class="nav-item">
+          <a class="nav-link px-0"
+            href="javascript:void(0)"
+            (click)="scrollToSection(section.id)"
+            [ngClass]="{'active': activeLink === section.id}">
+            {{ section.name }}
+          </a>
+        </li>
+      }
     </ul>
 
     <ul class="navbar-nav">

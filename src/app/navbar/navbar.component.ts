@@ -4,7 +4,7 @@ import { Component, HostListener, inject, PLATFORM_ID } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgStyle, NgClass, NgFor],
+  imports: [NgStyle, NgClass],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -19,16 +19,6 @@ export class NavbarComponent{
   @HostListener('window:scroll') onScroll(){
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 200) {
-      this.navbarWidth = '100%';
-      this.navbarTop = '0';
-      this.background = '#55508d'
-    } else {
-      this.navbarWidth = '75%';
-      this.navbarTop = '15px';
-      this.background = '#ffffff4d'
-    }
-
     if (scrollPosition > this.lastScrollTop) {
       if(this.lastScrollTop > 200){
         this.navbarTop = '-100px';
@@ -37,19 +27,18 @@ export class NavbarComponent{
       if(this.lastScrollTop > 200){
         this.navbarTop = '0';
       } else {
-        this.navbarTop = '15px';
+        this.navbarTop = '0';
       }
     }
 
     this.lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
   }
 
-
   sections = [
     { id: 'home', name: 'Home' },
     { id: 'about', name: 'About' },
-    { id: 'feature', name: 'Features' },
     { id: 'why-us', name: 'Why Choose Us' },
+    { id: 'feature', name: 'Features' },
     { id: 'our-work', name: 'Our Work' },
     { id: 'partners', name: 'Our Partners' },
   ];

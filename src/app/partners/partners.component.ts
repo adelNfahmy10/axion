@@ -1,4 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 
 @Component({
@@ -9,8 +10,16 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './partners.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class PartnersComponent {
-swiperConfig: SwiperOptions = {
+export class PartnersComponent implements OnInit{
+    private readonly _PLATFORM_ID = inject(PLATFORM_ID)
+
+    isBrowser = false;
+
+    ngOnInit(): void {
+      this.isBrowser = isPlatformBrowser(this._PLATFORM_ID)
+    }
+
+  swiperConfig: SwiperOptions = {
     slidesPerView: 9,
     spaceBetween: 20,
     centeredSlides: true,
