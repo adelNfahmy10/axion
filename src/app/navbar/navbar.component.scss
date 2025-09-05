@@ -1,13 +1,12 @@
-$mainColor : #128695;
-$second-color:#1286957a;
+$mainColor : #588CBC;
+$second-color:#588cbc97;
 *{
   transition: all .3s;
 }
 nav{
   background-color: transparent;
-  backdrop-filter: blur(5px);
   .logo{
-    width: 150px;
+    width: 80px;
   }
   .navbar-toggler-icon{
     background: none;

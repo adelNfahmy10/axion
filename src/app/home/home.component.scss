@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-$mainColor : #128695;
-$second-color:#1286957a;
+$mainColor : #588CBC;
+$second-color:#588cbc97;
 .home{
-  background: linear-gradient(to bottom, $second-color, #000000), url('/assets/image/home-image/home-bg.gif');
+  background: linear-gradient(to right,#222222b9 ,#222222b9 ), url('/assets/image/home-image/home-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  color: #fff;
+  color: $mainColor;
   .home-content{
+    backdrop-filter: blur(6px);
+    padding: 20px;
     width: 75%;
+    border-radius: 20px;
     h1{
       text-transform: capitalize;
+      font-weight: 800;
     }
     p{
-      color: #ccc;
+      color: #fff;
+    }
+    .second-btn{
+      color: #fff;
     }
   }
 }

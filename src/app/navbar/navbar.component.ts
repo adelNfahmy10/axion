@@ -16,6 +16,7 @@ export class NavbarComponent{
   navbarWidth:string = '100%'
   navbarTop:string = '0'
   background:string = 'transparent'
+  boxShadow:string = ''
   lastScrollTop = 0;
   isNavbarVisible = true;
 
@@ -26,19 +27,19 @@ export class NavbarComponent{
   @HostListener('window:scroll') onScroll(){
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > this.lastScrollTop) {
-      if(this.lastScrollTop > 200){
-        this.navbarTop = '-100px';
-      }
+    this.background = scrollPosition > 250 ? '#0c0c0cff' : 'transparent';
+
+    this.boxShadow = scrollPosition > 250 ? '0 5px 5px #ffffffa1' : '';
+
+
+    if (scrollPosition > this.lastScrollTop && scrollPosition > 250) {
+      this.navbarTop = '-100px';
     } else {
-      if(this.lastScrollTop > 200){
-        this.navbarTop = '0';
-      } else {
-        this.navbarTop = '0';
-      }
+      this.navbarTop = '0';
     }
 
-    this.lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
+
+    this.lastScrollTop = Math.max(scrollPosition, 0);
   }
 
   sections = [

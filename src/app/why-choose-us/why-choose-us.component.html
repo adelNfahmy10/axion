@@ -1,23 +1,28 @@
 <section id="why-us" class="why-us py-5">
   <div class="container">
-    <div class="title text-white d-flex gap-1">
+    <div class="title d-flex gap-1">
       <span class="px-3 py-1 rounded-5 main-bg">{{'whyUs.why' | translate}}</span>
       <h3>{{'whyUs.chooseUs' | translate}}</h3>
     </div>
-    <div class="row g-3">
+
+    <swiper-container dir="rtl" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="3" >
       @for (item of whyItems; track $index) {
-        <div class="col-md-6">
-          <div class="why-box shadow text-white wow fadeInUp rounded-5 p-4 d-flex justify-content-center aling-items-center gap-3">
+        <swiper-slide>
+          <div class="why-box shadow wow p-3 fadeInUp rounded-5 text-center d-flex flex-column justify-content-evenly align-items-center h-100">
+            <div class="why-img d-flex justify-content-center align-items-center">
+              <img loading="lazy" [src]="item.icon" [alt]="item.alt | translate">
+            </div>
             <div class="why-info">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <img loading="lazy" [src]="item.icon" [alt]="item.alt | translate">
-                <h5 class="mb-0">{{item.title | translate}}</h5>
-              </div>
+              <h5 class="my-3">{{item.title | translate}}</h5>
               <p>{{item.desc | translate}}</p>
             </div>
+            <div class="why-btn">
+              <button class="main-btn rounded-3">{{'whyUs.viewMore' | translate}}</button>
+            </div>
           </div>
-        </div>
+        </swiper-slide>
       }
-    </div>
+    </swiper-container>
   </div>
 </section>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-$mainColor: #128695;
+$mainColor : #588CBC;
+$second-color:#588cbc97;
 html[dir="ltr"] {
   direction: ltr;
   text-align: left;
@@ -18,6 +19,7 @@ html[dir="rtl"] {
 .main-bg{
   background-color: $mainColor;
   border: 1px solid $mainColor;
+  color: #fff
 }
 .main-btn{
   width: 130px;
@@ -29,7 +31,7 @@ html[dir="rtl"] {
 }
 .second-btn{
   width: 130px;
-  color: #fff;
+  color: #222;
   border: 1px solid $mainColor;
   background-color: transparent;
   &:hover{

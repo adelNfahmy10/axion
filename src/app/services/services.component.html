@@ -1,0 +1,46 @@
+<section id="services" class="services pb-5">
+  <div class="container">
+    <h2 class="text-center title-section mb-4">{{'services.title' | translate}}</h2>
+
+    <swiper-container dir="rtl" pagination="false"  space-between="30"
+    slides-per-view="5" >
+      @for (item of services.slice(0, 9); track $index) {
+        <swiper-slide>
+          <div class="services-box wow p-3 fadeInUp rounded-5 text-center">
+            <div class="services-img d-flex justify-content-center align-items-center">
+              <img loading="lazy" [src]="item.image" [alt]="item.image | translate">
+            </div>
+            <div class="services-info">
+              <span class="my-3">{{item.title | translate}}</span>
+              <!-- <p>{{item.desc | translate}}</p> -->
+            </div>
+            <div>
+              <i class="fa-solid fa-location-arrow cr"></i>
+            </div>
+          </div>
+        </swiper-slide>
+      }
+    </swiper-container>
+
+
+    <swiper-container dir="rtl" pagination="false"  space-between="30"
+    slides-per-view="5">
+      @for (item of services.slice(9, 14); track $index) {
+        <swiper-slide>
+          <div class="services-box wow p-3 fadeInUp rounded-5 text-center">
+            <div class="services-img d-flex justify-content-center align-items-center">
+              <img loading="lazy" [src]="item.image" [alt]="item.image | translate">
+            </div>
+            <div class="services-info">
+              <span class="my-3">{{item.title | translate}}</span>
+              <!-- <p>{{item.desc | translate}}</p> -->
+            </div>
+            <div>
+              <i class="fa-solid fa-location-arrow cr"></i>
+            </div>
+          </div>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</section>

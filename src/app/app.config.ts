@@ -18,8 +18,8 @@ export const appConfig: ApplicationConfig = {
         prefix: '/assets/i18n/',
         suffix: '.json'
       }),
-      lang: 'en',
-      fallbackLang: 'en'
+      lang: 'ar',
+      fallbackLang: 'ar'
     })
   ]
 };

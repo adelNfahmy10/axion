@@ -1,10 +1,11 @@
-$mainColor : #128695;
-$second-color:#1286957a;
+$mainColor : #588CBC;
+$second-color:#588cbc97;
 .about{
-  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000), url('../../assets/image/about-image/about-bg.jpg');
-  background-size: cover;
+  background: linear-gradient(to top, #ffffffd3, #ffffffd3), url('/assets/image/about-image/about-us.png');
+  background-repeat: no-repeat;
+  background-position: end center;
   .container{
-    backdrop-filter: blur(20px);
+    border-radius: 30px;
   }
   .about-img{
     img{
@@ -13,7 +14,7 @@ $second-color:#1286957a;
   }
   .about-info{
     .about-title{
-      border: 1px solid $mainColor;
+      border: 2px solid $mainColor;
       width: fit-content;
       .line{
         width: 20px;
@@ -27,7 +28,7 @@ $second-color:#1286957a;
 
     .about-content{
       p{
-        color: #ccc;
+        color: #222;
       }
     }
   }
