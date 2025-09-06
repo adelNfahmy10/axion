@@ -45,10 +45,9 @@ export class NavbarComponent{
   sections = [
     { id: 'home', name: 'navbar.home' },
     { id: 'about', name: 'navbar.about' },
+    { id: 'services', name: 'navbar.services' },
     { id: 'why-us', name: 'navbar.whyUs' },
-    { id: 'feature', name: 'navbar.features' },
-    { id: 'our-work', name: 'navbar.ourWork' },
-    { id: 'partners', name: 'navbar.partners' },
+    { id: 'clients', name: 'navbar.clients' },
   ];
   activeLink: string = 'home';
 

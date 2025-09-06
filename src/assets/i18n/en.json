@@ -5,8 +5,8 @@
     "about": "About Us",
     "whyUs": "Why Us",
     "features": "Features",
-    "ourWork": "Our Work",
-    "partners": "Partners",
+    "services": "Services",
+    "clients": "Clients",
     "getStart": "Get Started"
   },
 
@@ -141,7 +141,7 @@
     "title": "Our Clients"
   },
 
-   "footer": {
+  "footer": {
     "desc": "At Axion, we strive to provide the best innovative financial and consulting solutions that support our clients and help them succeed.",
     "services": {
       "title": "Our Services",
