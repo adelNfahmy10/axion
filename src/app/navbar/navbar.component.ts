@@ -27,9 +27,9 @@ export class NavbarComponent{
   @HostListener('window:scroll') onScroll(){
     const scrollPosition = window.scrollY;
 
-    this.background = scrollPosition > 250 ? '#0c0c0cff' : 'transparent';
+    this.background = scrollPosition > 80 ? '#0c0c0cff' : 'transparent';
 
-    this.boxShadow = scrollPosition > 250 ? '0 5px 5px #ffffffa1' : '';
+    this.boxShadow = scrollPosition > 80 ? '0 5px 5px #ffffffa1' : '';
 
 
     if (scrollPosition > this.lastScrollTop && scrollPosition > 250) {
