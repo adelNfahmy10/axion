@@ -5,8 +5,11 @@
       <h3>{{'whyUs.chooseUs' | translate}}</h3>
     </div>
 
-    <swiper-container dir="rtl" pagination="true" pagination-clickable="true" space-between="30"
-    slides-per-view="3" >
+    <swiper-container dir="ltr" [slides-per-view]="swiperConfig.slidesPerView"
+      [space-between]="swiperConfig.spaceBetween"
+      [breakpoints]="swiperConfig.breakpoints"
+      [loop]="swiperConfig.loop"
+      autoplay-delay="2500" autoplay-disable-on-interaction="false" centered-slides="true">
       @for (item of whyItems; track $index) {
         <swiper-slide>
           <div class="why-box shadow wow p-3 fadeInUp rounded-5 text-center d-flex flex-column justify-content-evenly align-items-center h-100">

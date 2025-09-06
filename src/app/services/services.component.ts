@@ -1,5 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-services',
@@ -88,5 +89,28 @@ export class ServicesComponent{
       title: "services.items.feasibilityTitle",
     },
   ];
+
+
+  swiperConfig: SwiperOptions = {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop:true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      0: {
+        slidesPerView: 2,
+      }
+    }
+  };
 
 }

@@ -2,8 +2,11 @@
   <div class="container">
     <h2 class="title-section mb-4">{{'services.title' | translate}}</h2>
 
-    <swiper-container dir="rtl" pagination="false"  space-between="30"
-    slides-per-view="5" >
+    <swiper-container dir="rtl" [slides-per-view]="swiperConfig.slidesPerView"
+      [space-between]="swiperConfig.spaceBetween"
+      [breakpoints]="swiperConfig.breakpoints"
+      [loop]="swiperConfig.loop"
+      autoplay-delay="2000" autoplay-disable-on-interaction="false" centered-slides="true">
       @for (item of services.slice(0, 10); track $index) {
         <swiper-slide>
           <div class="services-box wow p-3 fadeInUp rounded-5 text-center">
@@ -22,8 +25,11 @@
     </swiper-container>
 
 
-    <swiper-container dir="rtl" pagination="false"  space-between="30"
-    slides-per-view="5">
+    <swiper-container dir="ltr" [slides-per-view]="swiperConfig.slidesPerView"
+      [space-between]="swiperConfig.spaceBetween"
+      [breakpoints]="swiperConfig.breakpoints"
+      [loop]="swiperConfig.loop"
+      autoplay-delay="2000" autoplay-disable-on-interaction="false" centered-slides="true">
       @for (item of services.slice(10); track $index) {
         <swiper-slide>
           <div class="services-box wow p-3 fadeInUp rounded-5 text-center">

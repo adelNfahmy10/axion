@@ -119,9 +119,9 @@ export class WhyChooseUsComponent {
   ];
 
 
-  swiperConfig: SwiperOptions = {
+   swiperConfig: SwiperOptions = {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 50,
     centeredSlides: true,
     loop:true,
     autoplay: {
@@ -135,7 +135,7 @@ export class WhyChooseUsComponent {
       768: {
         slidesPerView: 2,
       },
-      320: {
+      0: {
         slidesPerView: 1,
       }
     }
