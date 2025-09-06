@@ -1,117 +1,174 @@
 {
   "navbar": {
-    "title":"Tech2Earn",
+    "title": "Axion",
     "home": "Home",
-    "about": "About",
-    "whyUs": "Why Choose Us",
+    "about": "About Us",
+    "whyUs": "Why Us",
     "features": "Features",
     "ourWork": "Our Work",
-    "partners": "Our Partners",
-    "getStart": "Get Start"
+    "partners": "Partners",
+    "getStart": "Get Started"
   },
+
   "hero": {
-    "title": "Smart software solutions to take your business into the future",
-    "subtitle": "Comprehensive web solutions, from websites and online stores to advanced ERP and POS systems, designed to grow your business.",
+    "title": "Financial Consulting That Makes a Real Difference",
+    "subtitle": "We provide innovative financial and consulting solutions that combine expertise and efficiency, supporting our clients in overcoming challenges, growing their businesses, and achieving their goals effectively.",
     "startNow": "Start Now",
     "learnMore": "Learn More"
   },
+
   "about": {
     "title": "About Us",
-    "heading": "Innovative Designs. Smart Strategies. Real Impact.",
-    "text": "At 'Tech2Earn' we provide complete digital solutions that help businesses grow and thrive in the digital world. From engaging social media designs and custom websites and apps to powerful SEO strategies — we deliver every project with passion and precision.",
-    "text2": "We’re more than just a service provider — we’re your partner in digital success.",
-    "contactUs" : "Contact Us",
-    "companyTitle": "Tech2Earn"
+    "heading": "Our Vision in Delivering Excellence...",
+    "content": "We are a company specialized in providing modern consulting and financial solutions, with a team of experts possessing deep experience in management, finance, and strategic development. We assist our clients in addressing financial and administrative challenges through accurate analysis of their needs and offering practical, actionable strategies. Quality and innovation are at the core of our services, ensuring our clients achieve the best results and grow their businesses sustainably with distinction and success.",
+    "contactUs": "Contact Us",
+    "companyTitle": "Axion"
   },
-  "whyUs": {
-    "why":"Why",
-    "chooseUs":"Choose Us.",
-    "title": "Why Choose Us.",
+
+  "services": {
+    "title": "Our Services",
     "items": {
-      "tailoredTitle": "Tailored Digital Solutions",
-      "tailoredDesc": "Everything we build is customized to fit your business needs — no templates, just strategy.",
-      "creativeTitle": "Creative Design Expertise",
-      "creativeDesc": "From branding to social media visuals, our designs are made to impress and convert.",
-      "performanceTitle": "Performance-First Development",
-      "performanceDesc": "We develop websites and apps that load fast, work smoothly, and scale with your business.",
-      "ecosystemTitle": "Complete Marketing Ecosystem",
-      "ecosystemDesc": "SEO, social media, content — we connect it all under one plan to maximize impact."
+      "financingTitle": "Financing Solutions",
+      "bookkeepingTitle": "Bookkeeping Management",
+      "taxTitle": "Zakat & Tax Consulting",
+      "payrollTitle": "Payroll & Contract Management",
+      "mergersTitle": "Mergers & Acquisitions Consulting",
+      "restructuringTitle": "Restructuring",
+      "consultingTitle": "Financial & Professional Consulting",
+      "reportingTitle": "Management & Financial Reporting",
+      "costAccountingTitle": "Cost Accounting",
+      "trainingTitle": "Training",
+      "riskAssessmentTitle": "Risk Assessment",
+      "franchiseTitle": "Franchising",
+      "techConsultingTitle": "Technology Consulting",
+      "uxConsultingTitle": "User Experience Consulting",
+      "dataAnalysisTitle": "Data Analysis",
+      "isoTitle": "ISO Certification Services",
+      "contractorsTitle": "Contractor Classification",
+      "governanceTitle": "Governance, Policies & Procedures",
+      "feasibilityTitle": "Feasibility Studies for Projects"
     }
   },
-  "features": {
-    "title": "Features",
-    "subtitle": "Smart, scalable, and creative digital solutions, all in one place.",
+
+  "whyUs": {
+    "why": "Why",
+    "chooseUs": "Choose Us",
+    "title": "Why Choose Us.",
     "items": {
-      "supportTitle": "Technical Support & Maintenance",
-      "supportDesc": "We provide continuous technical support and proactive maintenance to ensure your digital platforms run smoothly and efficiently.",
+      "experienceTitle": "Experience & Professionalism",
+      "experienceDesc": "The Axion team is specialized and highly experienced in financial and professional consulting, ensuring clients receive accurate and reliable reports along with practical solutions that support sound investment decisions.",
 
-      "socialTitle": "Social Media Excellence",
-      "socialDesc": "We manage your social presence with creative content, consistent branding, and active engagement to grow your audience.",
+      "transparencyTitle": "Transparency & Credibility",
+      "transparencyDesc": "We adopt international standards in feasibility studies, ensuring complete credibility and transparency in the reports we deliver.",
 
-      "motionTitle": "Motion Graphics & Video",
-      "motionDesc": "We craft engaging motion graphics and videos that capture attention and bring your brand’s story to life.",
+      "supportTitle": "Continuous Advisory Support",
+      "supportDesc": "We provide our clients with ongoing advisory support throughout all stages of investment, helping them make the right decisions and achieve their goals.",
 
-      "designTitle": "Creative Graphic Design",
-      "designDesc": "We design eye-catching visuals and graphics that align with your brand identity and leave a lasting impression.",
+      "costTitle": "Cost Efficiency",
+      "costDesc": "We deliver the best consulting services at the lowest possible cost, saving clients both time and effort.",
 
-      "webTitle": "Modern Website Development",
-      "webDesc": "We build fast, responsive, and user-friendly websites tailored to your business goals and customer needs.",
+      "specializationTitle": "Specialization",
+      "specializationDesc": "Our experts specialize in various economic fields to deliver tailored feasibility studies that suit each sector individually.",
 
-      "ecommerceTitle": "E-Commerce Solutions",
-      "ecommerceDesc": "We develop scalable and secure e-commerce platforms that provide seamless shopping experiences for your customers.",
-
-      "adsTitle": "Digital Advertising Campaigns",
-      "adsDesc": "We create data-driven ad campaigns across multiple platforms to maximize your reach and return on investment.",
-
-      "seoTitle": "SEO Optimization",
-      "seoDesc": "We optimize your website for search engines to improve visibility, attract organic traffic, and increase conversions.",
-
-      "brandingTitle": "Branding & Identity Design",
-      "brandingDesc": "We craft unique branding strategies and designs that define your identity and set you apart from competitors."
+      "riskTitle": "Risk Mitigation",
+      "riskDesc": "Axion Consulting provides services that enhance investment success and minimize financial risks in business projects."
     },
-    "explore": "Explore Services"
-  },
-  "ourWork": {
-    "title": "Our Work",
-    "project": "Tech2Earn"
-  },
-  "partners": {
-    "title": "Our Partners"
-  },
-  "footer":{
-    "info":{
-      "name": "Tech2Earn",
-      "description": "We bring your brand to life with creative social media designs, custom websites, mobile apps, and SEO that drives results."
+
+    "mainAccordion": {
+      "experience": {
+        "title": "Extensive Expertise & Competence",
+        "desc": "We take pride in our vast experience in the Saudi market and our specialized team’s skills, using the latest methods and technologies to guarantee the best results for your business with high efficiency and cost-effectiveness."
+      },
+      "customServices": {
+        "title": "Services Tailored to Your Needs",
+        "desc": "We are committed to delivering solutions designed specifically to meet our clients’ requirements, through specialized consultants who guarantee professional services that fully achieve your objectives."
+      },
+      "timeCommitment": {
+        "title": "Time Commitment is Key to Our Success",
+        "desc": "We fully recognize the importance of time for our clients, so we ensure our services are delivered efficiently within the agreed timeframe, while maintaining the highest standards of professionalism and accuracy."
+      },
+      "partnership": {
+        "title": "A Partnership That Achieves Your Goals",
+        "desc": "We believe our success is tied to our clients’ success, so we strive to understand your vision and aspirations, providing integrated consulting that supports your growth and development, with smooth operations and well-studied plans to achieve your objectives."
+      },
+      "team": {
+        "title": "Specialized Consulting Team",
+        "desc": "We have a team of top consultants with high competence and extensive experience in financial and administrative fields."
+      },
+      "agreements": {
+        "title": "Agreement Structuring",
+        "desc": "We organize financial and legal agreements to ensure compliance with standards and protect our clients’ interests."
+      },
+      "internalControl": {
+        "title": "Internal Control Systems Evaluation",
+        "desc": "We assess and improve internal control systems to ensure transparency and enhance operational efficiency."
+      }
     },
+
+    "servicesAccordion": {
+      "systemsDevelopment": {
+        "title": "Financial & Administrative Systems Development",
+        "desc": "We assist in developing financial and administrative systems tailored to your company’s goals and needs."
+      },
+      "strategicPlanning": {
+        "title": "Strategic Planning",
+        "desc": "We provide comprehensive services in strategic planning to help businesses achieve sustainable growth."
+      },
+      "costSystems": {
+        "title": "Costing & Budgeting Systems",
+        "desc": "We design and develop costing and budgeting systems to facilitate efficient financial resource management."
+      },
+      "hrSystems": {
+        "title": "HR Systems",
+        "desc": "We build and improve automated HR systems to enhance performance and workforce management."
+      },
+      "restructuring": {
+        "title": "Corporate Restructuring",
+        "desc": "We restructure existing companies and review their credit positions to achieve financial stability and balance."
+      },
+      "marketingStrategies": {
+        "title": "Marketing Strategies",
+        "desc": "We review and develop marketing strategies to help our clients strengthen their market position and increase success opportunities."
+      },
+      "riskManagement": {
+        "title": "Risk Management",
+        "desc": "We deliver integrated solutions to identify, assess, and manage potential risks facing companies, ensuring business sustainability and minimizing potential losses."
+      }
+    }
+  },
+
+  "clients": {
+    "title": "Our Clients"
+  },
+
+   "footer": {
+    "desc": "At Axion, we strive to provide the best innovative financial and consulting solutions that support our clients and help them succeed.",
     "services": {
-      "title": "Services",
+      "title": "Our Services",
       "list": {
-        "Professional": "Professional Social Media Management",
-        "Graphic": "Eye-Catching Graphic Design",
-        "Motion": "Motion Graphics & Video Production",
-        "Website": "Website Development",
-        "ECommerce": "E-Commerce Store Development",
-        "Digital":"Digital Advertising & Campaigns",
-        "SEO": "SEO (Search Engine Optimization)",
-        "Branding" : "Branding & Visual Identity",
-        "Technical": "Technical Support & Maintenance"
+        "financing": "Financing Solutions",
+        "bookkeeping": "Bookkeeping Management",
+        "tax": "Zakat & Tax Consulting",
+        "payroll": "Payroll & Contracts Management",
+        "mergers": "Mergers & Acquisitions Consulting",
+        "restructuring": "Restructuring",
+        "consulting": "Financial & Professional Consulting",
+        "reporting": "Financial Management & Reporting",
+        "costAccounting": "Cost Accounting",
+        "training": "Training",
+        "riskAssessment": "Risk Assessment",
+        "franchise": "Franchise Services",
+        "techConsulting": "Technology Consulting",
+        "uxConsulting": "User Experience Consulting",
+        "dataAnalysis": "Data Analysis",
+        "iso": "ISO Certification Services",
+        "contractors": "Contractors Classification",
+        "governance": "Governance, Policies & Procedures",
+        "feasibility": "Project Feasibility Studies"
       }
     },
-    "solutions": {
-      "title": "Solutions",
-      "list": {
-        "Technical": "Technical Support Services",
-        "Infrastructure" : "Infrastructure Services",
-        "Network": "Network Telephony Solutions",
-        "Smart": "Smart resources",
-        "Digital" : "Digital Marketing"
-      }
-    },
-    "contact": {
-      "phone": "+966559065802",
-      "email": "med.abdelkader@2earn.cash",
-      "address": "Minarat Al-Ma'rifah Building No. 402, Third Floor - King Abdulaziz University - Jeddah",
-      "footer": "Tech2Earn Team © 2025"
+    "contacts": {
+      "title": "Contact Us"
     }
   }
 }

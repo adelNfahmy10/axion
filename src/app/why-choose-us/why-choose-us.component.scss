@@ -1,22 +1,22 @@
 $mainColor : #588CBC;
 $second-color:#588cbc97;
 .why-us{
+  position: relative;
+  .start-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
   .title{
     span{
       height: fit-content;
     }
   }
-  .vision-box, .plan-box, .value-box{
-    img{
-      width: 50px;
-    }
-  }
-}
-    swiper-container {
-      width: 100%;
-      height: 100%;
-    }
 
+  swiper-container {
+    width: 100%;
+    height: 100%;
     swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -36,3 +36,24 @@ $second-color:#588cbc97;
         }
       }
     }
+  }
+
+  .accordion-button{
+    direction: rtl;
+    text-align: left;
+    justify-content: space-between;
+    &::after{
+      background-color: #fff;
+      background-position: center;
+      background-size: 20px;
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+
+}
+
+

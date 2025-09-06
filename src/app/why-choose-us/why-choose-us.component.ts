@@ -14,27 +14,27 @@ export class WhyChooseUsComponent {
   whyItems = [
     {
       icon:'assets/image/why-chooes-us-image/icon-1.png',
-      alt:'whyUs.items.tailoredTitle',
-      title: "whyUs.items.tailoredTitle",
-      desc:  "whyUs.items.tailoredDesc"
+      alt:'whyUs.items.experienceTitle',
+      title: "whyUs.items.experienceTitle",
+      desc:  "whyUs.items.experienceDesc"
     },
     {
       icon:'assets/image/why-chooes-us-image/icon-2.png',
-      alt:'whyUs.items.creativeTitle',
-      title: "whyUs.items.creativeTitle",
-      desc: "whyUs.items.creativeDesc"
+      alt:'whyUs.items.transparencyTitle',
+      title: "whyUs.items.transparencyTitle",
+      desc: "whyUs.items.transparencyDesc"
     },
     {
       icon:'assets/image/why-chooes-us-image/icon-3.png',
-      alt:'whyUs.items.performanceTitle',
-      title: "whyUs.items.performanceTitle",
-      desc: "whyUs.items.performanceDesc"
+      alt:'whyUs.items.supportTitle',
+      title: "whyUs.items.supportTitle",
+      desc: "whyUs.items.supportDesc"
     },
     {
       icon:'assets/image/why-chooes-us-image/icon-4.png',
-      alt:'whyUs.items.ecosystemTitle',
-      title: "whyUs.items.ecosystemTitle",
-      desc: "whyUs.items.ecosystemDesc"
+      alt:'whyUs.items.costTitle',
+      title: "whyUs.items.costTitle",
+      desc: "whyUs.items.costDesc"
     },
     {
       icon:'assets/image/why-chooes-us-image/icon-5.png',
@@ -49,6 +49,75 @@ export class WhyChooseUsComponent {
       desc: "whyUs.items.riskDesc"
     }
   ];
+
+  mainAccordion = [
+    {
+      title: "whyUs.mainAccordion.experience.title",
+      desc: "whyUs.mainAccordion.experience.desc"
+    },
+    {
+      title: "whyUs.mainAccordion.customServices.title",
+      desc: "whyUs.mainAccordion.customServices.desc"
+    },
+
+    {
+      title: "whyUs.mainAccordion.timeCommitment.title",
+      desc: "whyUs.mainAccordion.timeCommitment.desc"
+    },
+
+    {
+      title: "whyUs.mainAccordion.partnership.title",
+      desc: "whyUs.mainAccordion.partnership.desc"
+    },
+
+    {
+      title: "whyUs.mainAccordion.team.title",
+      desc: "whyUs.mainAccordion.team.desc"
+    },
+
+    {
+      title: "whyUs.mainAccordion.agreements.title",
+      desc: "whyUs.mainAccordion.agreements.desc"
+    },
+
+    {
+      title: "whyUs.mainAccordion.internalControl.title",
+      desc: "whyUs.mainAccordion.internalControl.desc"
+    },
+
+  ];
+
+  servicesAccordion = [
+    {
+      title: "whyUs.servicesAccordion.systemsDevelopment.title",
+      desc: "whyUs.servicesAccordion.systemsDevelopment.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.strategicPlanning.title",
+      desc: "whyUs.servicesAccordion.strategicPlanning.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.costSystems.title",
+      desc: "whyUs.servicesAccordion.costSystems.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.hrSystems.title",
+      desc: "whyUs.servicesAccordion.hrSystems.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.restructuring.title",
+      desc: "whyUs.servicesAccordion.restructuring.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.marketingStrategies.title",
+      desc: "whyUs.servicesAccordion.marketingStrategies.desc"
+    },
+    {
+      title: "whyUs.servicesAccordion.riskManagement.title",
+      desc: "whyUs.servicesAccordion.riskManagement.desc"
+    },
+  ];
+
 
   swiperConfig: SwiperOptions = {
     slidesPerView: 3,

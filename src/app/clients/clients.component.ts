@@ -1,5 +1,4 @@
-import { isPlatformBrowser } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, PLATFORM_ID } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
 
@@ -12,16 +11,8 @@ import { SwiperOptions } from 'swiper/types';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ClientsComponent {
-  private readonly _PLATFORM_ID = inject(PLATFORM_ID)
-
-  isBrowser = false;
-
-  ngOnInit(): void {
-    this.isBrowser = isPlatformBrowser(this._PLATFORM_ID)
-  }
-
   swiperConfig: SwiperOptions = {
-    slidesPerView: 9,
+    slidesPerView: 8,
     spaceBetween: 20,
     centeredSlides: true,
     loop:true,
@@ -31,7 +22,7 @@ export class ClientsComponent {
     },
     breakpoints: {
       1200: {
-        slidesPerView: 9,
+        slidesPerView: 8,
       },
       768: {
         slidesPerView: 6,

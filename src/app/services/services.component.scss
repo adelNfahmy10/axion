@@ -2,10 +2,18 @@ $mainColor : #128695;
 $second-color:#1286957a;
 
 .services{
+  position: relative;
+  .arrow-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotateY(180deg);
+
+  }
   .title-section{
     position: relative;
     width: fit-content;
-    margin: 0 auto 20px;
     text-shadow: 4px 4px 5px $second-color;
     &::before{
       content: '';
@@ -26,5 +34,10 @@ $second-color:#1286957a;
         font-size: 14px;
       }
     }
+  }
+}
+@media (max-width:567px) {
+  .arrow-image{
+    display: none !important;
   }
 }

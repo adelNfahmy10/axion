@@ -18,11 +18,53 @@
               <p>{{item.desc | translate}}</p>
             </div>
             <div class="why-btn">
-              <button class="main-btn rounded-3">{{'whyUs.viewMore' | translate}}</button>
+              <button class="main-btn rounded-3">{{'hero.learnMore' | translate}}</button>
             </div>
           </div>
         </swiper-slide>
       }
     </swiper-container>
+
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="accordion accordion-flush" id="mainAccordion">
+          @for(item of mainAccordion; track $index){
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#main-collapse' + $index" aria-expanded="false" [attr.aria-controls]="'main-collapse' + $index">
+                  {{item.title | translate}}
+                </button>
+              </h2>
+              <div [id]="'main-collapse' + $index" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+                <div class="accordion-body">
+                  {{item.desc | translate}}
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="accordion accordion-flush" id="servicesAccordion">
+          @for(item of servicesAccordion; track $index){
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#service-collapse' + $index" aria-expanded="false" [attr.aria-controls]="'service-collapse' + $index">
+                  {{item.title | translate}}
+                </button>
+              </h2>
+              <div [id]="'service-collapse' + $index" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  {{item.desc | translate}}
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
   </div>
+  <img src="assets/image/why-chooes-us-image/shape3.svg" class="start-image" alt="">
 </section>

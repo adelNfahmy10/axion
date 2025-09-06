@@ -1,8 +1,16 @@
 $mainColor : #128695;
 $second-color:#1286957a;
-
-.partners{
-  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000);
-  background-size: cover;
-  background-position: center center;
+.title-section{
+  position: relative;
+  width: fit-content;
+  text-shadow: 4px 4px 5px $second-color;
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 65%;
+    background-color: $mainColor;
+  }
 }

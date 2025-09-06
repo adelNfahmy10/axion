@@ -1,36 +1,35 @@
-$mainColor : #128695;
-$second-color:#1286957a;
+$mainColor : #588CBC;
+$second-color:#588cbc97;
 
 footer{
-  background: linear-gradient(to top, #000000 0% 2%, $second-color, #000000);
+  background: linear-gradient(to top,$second-color, transparent);
   background-size: cover;
   background-position: center center;
-  .logo{
+  .footer-info{
     .logo-img{
-      width: 200px;
+      width: 150px;
     }
     p{
-      color: #ccc;
+      color: #222;
+    }
+    .footer-icons{
+      transition: all .3s;
     }
   }
-  li{
-    font-size: 14px;
-    color: #ccc;
-  }
-  .footer-icons{
-    transition: all .3s;
-  }
-  .footer-contact{
-    span{
-      font-size: 18px;
-      font-weight: 600;
+
+  .footer-services{
+    color: #222;
+    li{
+      font-size: 14px;
     }
   }
+
   .copy-right{
-    background-color: $mainColor;
-    color: #fff;
+    background: linear-gradient(to top,$second-color, transparent);
+    color: #222;
+    font-weight: 600;
   }
   .fa-location-dot{
-    color: $mainColor;
+    color: $second-color;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -9,114 +9,84 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './services.component.scss',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class ServicesComponent {
+export class ServicesComponent{
   services = [
     {
       image:'../../assets/image/service-image/Financing-icon.png',
-      title: "الحلول التمويلية",
-      desc: "يقـدم فريـق الإستشـارات التمويليـة في شـركة لـين مجموعـة واسـعة مـن خيـارات التمويـل للوصـول إلى الحلـول التـي تتمـاىش مـع أهـداف العميـل عـى المـدى القصـير والمـدى البعيـد."
+      title: "services.items.financingTitle",
     },
-
     {
-      image:'../../assets/image/service-image/restructuring-icon.png',
-      title: "إدارة الدفاتر المحاسبية",
-      desc: "خدمة التقييد في الدفاتر في شركة لين ستمكنك من تحقيق النمو المستدام لأعمالـك والتركيـز علـى جوهرهـا، بينمـا يقـوم فريقنـا المـؤهـل والخبـير بـإدارة كافـة حسـاباتك وسـجالتك الماليـة بطريقـة محترفـة، وسـنضمن لـك إعـداد التقارير المالية في الوقت المناسـب وبأعلى مسـتوى من الكفاءة.",
+      image:'../../assets/image/service-image/Restriction-icon.png',
+      title: "services.items.bookkeepingTitle",
     },
-
     {
       image:'../../assets/image/service-image/Consultations-icon.png',
-      title: "إستشارات الزكاة و الضريبة",
-      desc: "نقـدم يف شـركة لـن خدمـة استشـارات الـزكاة والضريبـة التـي تمثل تحديـا صعبـا نظـرا لآلثـار املرتتبـة عـن الغرامـات والعقوبـات التـي تفرضهـا الجهـات التنظيميـة نتيجـة ألخطـاء تحـدث يف تقديـم املعلومـات املحاسـبية والضريبيـة، بموجـب القوانـن والتعليمـات التـي تتغـر باسـتمرار. "
+      title: "services.items.taxTitle",
     },
-
     {
       image:'../../assets/image/service-image/Management-icon.png',
-      title: "إدارة الرواتب والعقود",
-      desc: "نقـدم يف شـركة لـن خدمـة استشـارات الـزكاة والضريبـة التـي تمثل تحديـا صعبـا نظـرا لآلثـار املرتتبـة عـن الغرامـات والعقوبـات التـي تفرضهـا الجهـات التنظيميـة نتيجـة ألخطـاء تحـدث يف تقديـم املعلومـات املحاسـبية والضريبيـة، بموجـب القوانـن والتعليمـات التـي تتغـر باسـتمرار. "
+      title: "services.items.payrollTitle",
     },
-
     {
       image:'../../assets/image/service-image/Merger-icon.png',
-      title: "إستشارات الإندماج والإستحواذ",
-      desc: "نقـدم يف شـركة لـن خدمـة استشـارات الـزكاة والضريبـة التـي تمثل تحديـا صعبـا نظـرا لآلثـار املرتتبـة عـن الغرامـات والعقوبـات التـي تفرضهـا الجهـات التنظيميـة نتيجـة ألخطـاء تحـدث يف تقديـم املعلومـات املحاسـبية والضريبيـة، بموجـب القوانـن والتعليمـات التـي تتغـر باسـتمرار. "
+      title: "services.items.mergersTitle",
     },
-
     {
       image:'../../assets/image/service-image/restructuring-icon.png',
-      title: "إعادة الهيكلة",
-      desc: "نقـدم يف شـركة لـن خدمـة استشـارات الـزكاة والضريبـة التـي تمثل تحديـا صعبـا نظـرا لآلثـار املرتتبـة عـن الغرامـات والعقوبـات التـي تفرضهـا الجهـات التنظيميـة نتيجـة ألخطـاء تحـدث يف تقديـم املعلومـات املحاسـبية والضريبيـة، بموجـب القوانـن والتعليمـات التـي تتغـر باسـتمرار. "
+      title: "services.items.restructuringTitle",
     },
-
     {
       image:'../../assets/image/service-image/professional-consulting-icon.png',
-      title: "الإستشارات المالية والمهنية",
-      desc: "نقـدم يف شـركة لـن خدمـة استشـارات الـزكاة والضريبـة التـي تمثل تحديـا صعبـا نظـرا لآلثـار املرتتبـة عـن الغرامـات والعقوبـات التـي تفرضهـا الجهـات التنظيميـة نتيجـة ألخطـاء تحـدث يف تقديـم املعلومـات املحاسـبية والضريبيـة، بموجـب القوانـن والتعليمـات التـي تتغـر باسـتمرار. "
+      title: "services.items.consultingTitle",
     },
-
-
     {
       image:'../../assets/image/service-image/financial-reports-icon.png',
-      title: "الإدارة والتقارير المالية",
-      desc: "في شـركة ليـن لدينـا خـبرة كبـيرة في التصنيـف وإصـدار وتجديـد شـهادات التصنيـف وتصنيـف شـركات المقـاولات."
-    },
-
-    {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "الحوكمة والسياسات والإجراءات",
-      desc: "شـركة لـين للإستشـارات الماليـة والمهنيـة تقـدم خدمـة حوكمـة الكيانـات وتطويـر أنظمتهـا الإداريـة لتعزيـز العمـل المؤسسـي وضمـان اسـتمرارية الكيـان ونجاحـه"
-    },
-
-    {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "دراسات جدوى المشروعات",
-      desc: "فريـق الخـبراء في شـركة لـين لديـه خـبرة عمليـة ومعرفـة عميقـة بأسـواق الإسـتثمار تـزودك بالإرشـاد المهنـي والحلـول الماليـة المبتكـرة التـي تضمـن نجـاح مشـروعك."
-    },
-
-    {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "اللإستشارات المالية والمهنية",
-      desc: "فريقنا المتخصص في شركة لـين لديه خــبرة واسعة في مجالات الإستشارات الماليـة والمهنيـة يضمـن لـك الحصـول عـى استشـارات بجـودة عاليـة تلبـي احتياجـات منظمتـك بدقـة واحرتافيـة"
-    },
-
-    {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "إعادة الهيكلة",
-      desc: "يقـدم فريـق الإستشـارات التمويليـة في شـركة لـين مجموعـة واسـعة مـن خيـارات التمويـل للوصـول إلى الحلـول التـي تتمـاىش مـع أهـداف العميـل عـى المـدى القصـير والمـدى البعيـد."
-    },
-
-    {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "استشارات الاندماج والاستحواذ",
-      desc: "خدمة التقييد في الدفاتر في شركة لين ستمكنك من تحقيق النمو المستدام لأعمالـك والتركيـز علـى جوهرهـا، بينمـا يقـوم فريقنـا المـؤهـل والخبـير بـإدارة كافـة حسـاباتك وسـجالتك الماليـة بطريقـة محترفـة، وسـنضمن لـك إعـداد التقارير المالية في الوقت المناسـب وبأعلى مسـتوى من الكفاءة."
+      title: "services.items.reportingTitle",
     },
     {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "إدارة الرواتب والعقود",
-      desc: ""
+      image:'../../assets/image/service-image/Costaccounting-icon.png',
+      title: "services.items.costAccountingTitle",
     },
     {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "استشارات الزكاة والضريبة",
-      desc: ""
+      image:'../../assets/image/service-image/traning-icon.png',
+      title: "services.items.trainingTitle",
     },
     {
-      image:'../../assets/image/service-image/Financing-icon.png',
-      title: "التقييد في الدفاتر التجارية",
-      desc: ""
+      image:'../../assets/image/service-image/riskassessment-icon.png',
+      title: "services.items.riskAssessmentTitle",
     },
-
-    { title: "الامتياز التجاري", desc: "" },
-    { title: "تقييم المخاطر", desc: "" },
-    { title: "التدريب", desc: "" },
-    { title: "محاسبة التكاليف", desc: "" },
-    { title: "الإدارة والتقارير المالية", desc: "" },
-    { title: "الاستشارات المالية والمهنية", desc: "" },
-    { title: "خدمات شهادات الأيزو", desc: "" },
-    { title: "تحليل البيانات", desc: "" },
-    { title: "استشارات تجربة المستخدم (UX)", desc: "" },
-    { title: "استشارات البرامج التقنية", desc: "" },
-    { title: "دراسات الجدوى للمشروعات", desc: "" },
-    { title: "الحوكمة والسياسات والإجراءات", desc: "" },
-    { title: "تصنيف المقاولين", desc: "" }
+    {
+      image:'../../assets/image/service-image/Franchise-icon.png',
+      title: "services.items.franchiseTitle",
+    },
+    {
+      image:'../../assets/image/service-image/Technical-software-icon.png',
+      title: "services.items.techConsultingTitle",
+    },
+    {
+      image:'../../assets/image/service-image/ux-icon.png',
+      title: "services.items.uxConsultingTitle",
+    },
+    {
+      image:'../../assets/image/service-image/data-analysis-icon.png',
+      title: "services.items.dataAnalysisTitle",
+    },
+    {
+      image:'../../assets/image/service-image/iso-icon.png',
+      title: "services.items.isoTitle",
+    },
+    {
+      image:'../../assets/image/service-image/Contractor-icon.png',
+      title: "services.items.contractorsTitle",
+    },
+    {
+      image:'../../assets/image/service-image/icon-9.png',
+      title: "services.items.governanceTitle",
+    },
+    {
+      image:'../../assets/image/service-image/Feasibility-icon.png',
+      title: "services.items.feasibilityTitle",
+    },
   ];
+
 }
