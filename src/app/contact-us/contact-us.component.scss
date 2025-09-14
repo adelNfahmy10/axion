@@ -1,0 +1,96 @@
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
+.contact-us{
+  .title-contact{
+    border-bottom: 3px solid $mainColor;
+    transition: all .2s;
+    font-weight: 800;
+    font-size: 38px;
+    width: fit-content;
+    color: $mainColor;
+    &:hover{
+      border-top: 3px solid $mainColor;
+      border-bottom: none;
+    }
+  }
+
+ .contact-form {
+    width: 75%;
+    margin: auto;
+    form {
+      position: relative;
+      .input-field {
+        border-radius: 1.5625rem;
+        padding: 0.625rem;
+        padding-top: 15px;
+        border: none !important;
+        border-bottom: 1px solid #d8d8d8 !important;
+        background-color: transparent;
+        margin-bottom: 1.2rem;
+        transition: background-color 0.3s;
+
+        &::placeholder {
+          font-size: 0.875rem;
+          color: #8f8f8f;
+        }
+
+        &:focus,&:not(:placeholder-shown) {
+          box-shadow: 0 4px 2px $second-color !important;
+          background-color: #ffffffde;
+        }
+      }
+      .icon-Facility,.icon-Name ,.icon-Administrative , .icon-email, .icon-phone, .icon-service, .icon-msg{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s;
+        pointer-events: none;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 0.875rem;
+          color: #222;
+        }
+      }
+      .input-field:focus ~ .icon-Facility,
+      .input-field:not(:placeholder-shown) ~ .icon-Facility,
+      .input-field:focus ~ .icon-email,
+      .input-field:not(:placeholder-shown) ~ .icon-email,
+      .input-field:focus ~ .icon-Name,
+      .input-field:not(:placeholder-shown) ~ .icon-Name,
+      .input-field:focus ~ .icon-phone,
+      .input-field:not(:placeholder-shown) ~ .icon-phone,
+      .input-field:focus ~ .icon-Administrative,
+      .input-field:not(:placeholder-shown) ~ .icon-Administrative,
+      .input-field:focus ~ .icon-service,
+      .input-field:not(:placeholder-shown) ~ .icon-service,
+      .input-field:focus ~ .icon-msg,
+      .input-field:not(:placeholder-shown) ~ .icon-msg {
+        top: 0;
+        left: 0;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .contact-info{
+    .box-icon{
+      width: 50px;
+      i{
+        font-size: 30px;
+      }
+    }
+
+  }
+}
+
+@media (max-width:567px) {
+  .contact-us .contact-form{
+    width: 100%;
+  }
+}

@@ -1,23 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-$mainColor : #588CBC;
-$second-color:#588cbc97;
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
 .home{
-  background: linear-gradient(to right,#222222b9 ,#222222b9 ), url('/assets/image/home-image/home-bg.jpg');
+  background: linear-gradient(to right,#222222b9 ,#2222222c ), url('/assets/image/home-image/home-bg-3.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  color: $mainColor;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
   .home-content{
     padding: 20px;
-    width: 75%;
     border-radius: 20px;
     h1{
       text-transform: capitalize;
       font-weight: 800;
+      .effect{
+        position: relative;
+        top: 5.5px;
+        display: inline-block;
+        width: 20ch;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #0C4C93;
+        animation: typing 2s steps(21) infinite alternate-reverse
+      }
     }
     p{
       color: #fff;
+      font-size: 20px;
     }
     .second-btn{
       color: #fff;
@@ -27,5 +37,14 @@ $second-color:#588cbc97;
 @media (max-width:567px) {
   .home-content{
     width: 100% !important;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 20ch;
   }
 }

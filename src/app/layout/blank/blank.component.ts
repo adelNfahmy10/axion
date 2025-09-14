@@ -6,11 +6,12 @@ import { FooterComponent } from "../../footer/footer.component";
 import { WhyChooseUsComponent } from "../../why-choose-us/why-choose-us.component";
 import { ClientsComponent } from "../../clients/clients.component";
 import { ServicesComponent } from "../../services/services.component";
+import { ContactUsComponent } from "../../contact-us/contact-us.component";
 
 @Component({
   selector: 'app-blank',
   standalone: true,
-  imports: [AboutComponent, NavbarComponent, HomeComponent, FooterComponent, WhyChooseUsComponent, ServicesComponent, ClientsComponent],
+  imports: [AboutComponent, NavbarComponent, HomeComponent, FooterComponent, WhyChooseUsComponent, ServicesComponent, ClientsComponent, ContactUsComponent],
   templateUrl: './blank.component.html',
   styleUrl: './blank.component.scss'
 })

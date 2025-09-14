@@ -15,8 +15,8 @@ export class NavbarComponent{
 
   navbarWidth:string = '100%'
   navbarTop:string = '0'
-  background:string = 'transparent'
-  boxShadow:string = ''
+  background:string = '#fff';
+  navlinkColor:string = "#0C4C93"
   lastScrollTop = 0;
   isNavbarVisible = true;
 
@@ -27,16 +27,14 @@ export class NavbarComponent{
   @HostListener('window:scroll') onScroll(){
     const scrollPosition = window.scrollY;
 
-    this.background = scrollPosition > 80 ? '#0c0c0cff' : 'transparent';
+    // this.background = scrollPosition > 80 ? '#0C4C93' : '#fff';
+    // this.navlinkColor = scrollPosition > 80 ? '#fff' : '#0C4C93';
 
-    this.boxShadow = scrollPosition > 80 ? '0 5px 5px #ffffffa1' : '';
-
-
-    if (scrollPosition > this.lastScrollTop && scrollPosition > 250) {
-      this.navbarTop = '-100px';
-    } else {
-      this.navbarTop = '0';
-    }
+    // if (scrollPosition > this.lastScrollTop && scrollPosition > 250) {
+    //   this.navbarTop = '-100px';
+    // } else {
+    //   this.navbarTop = '0';
+    // }
 
 
     this.lastScrollTop = Math.max(scrollPosition, 0);
@@ -48,6 +46,7 @@ export class NavbarComponent{
     { id: 'services', name: 'navbar.services' },
     { id: 'why-us', name: 'navbar.whyUs' },
     { id: 'clients', name: 'navbar.clients' },
+    { id: 'contact-us', name: 'navbar.contact-us' },
   ];
   activeLink: string = 'home';
 

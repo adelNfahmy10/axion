@@ -1,16 +1,16 @@
-$mainColor : #128695;
-$second-color:#1286957a;
-.title-section{
-  position: relative;
-  width: fit-content;
-  text-shadow: 4px 4px 5px $second-color;
-  &::before{
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    height: 3px;
-    width: 65%;
-    background-color: $mainColor;
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
+.clients{
+  .title-client{
+    border-bottom: 3px solid $mainColor;
+    transition: all .2s;
+    font-weight: 800;
+    font-size: 38px;
+    width: fit-content;
+    color: $mainColor;
+    &:hover{
+      border-top: 3px solid $mainColor;
+      border-bottom: none;
+    }
   }
 }

@@ -1,43 +1,67 @@
-$mainColor : #128695;
-$second-color:#1286957a;
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
 
 .services{
   position: relative;
-  .arrow-image{
+  .overlay{
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #F2F4F4;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 87%);
     z-index: -1;
-    transform: rotateY(180deg);
-
   }
   .title-section{
-    position: relative;
+    border-bottom: 4px solid $mainColor;
+    transition: all .2s;
+    font-weight: 800;
+    font-size: 38px;
     width: fit-content;
-    text-shadow: 4px 4px 5px $second-color;
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      height: 3px;
-      width: 65%;
-      background-color: $mainColor;
+    color: $mainColor;
+    &:hover{
+      border-top: 4px solid $mainColor;
+      border-bottom: none;
     }
   }
-  .services-box {
-    img{
-      width: 80px;
+  .col-md-4 {
+    &:nth-child(even) .services-box {
+      background-color: #fff;
     }
-    .services-info{
-      span{
-        font-size: 14px;
+    &:nth-child(odd) .services-box {
+      background-color: $mainColor;
+      color: #fff;
+    }
+    .services-box {
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 80px;
+      }
+      .services-info{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(255, 255, 255, 0.95); // خلفية فاتحة شفافة
+        color: #000; // لون النص واضح
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover .services-info{
+        width: 100%;
+        opacity: 1;
+        height: 100%;
       }
     }
-  }
-}
-@media (max-width:567px) {
-  .arrow-image{
-    display: none !important;
   }
 }

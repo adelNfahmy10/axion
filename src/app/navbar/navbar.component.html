@@ -1,13 +1,11 @@
 <nav
   [ngStyle]="{
     'top': navbarTop,
-    'background' : background,
-    'box-shadow' : boxShadow
   }"
   class="navbar navbar-expand-lg px-5 animate__animated animate__fadeInDown fixed-top w-100 z-3"
   >
   <a class="navbar-brand cr" (click)="scrollToSection('home')">
-    <img loading="lazy" src="assets/image/navbar-image/logo-color-1.png" class="logo" [alt]="'navbar.title' | translate">
+    <img loading="lazy" src="assets/image/navbar-image/logo-light.png" class="logo" [alt]="'navbar.title' | translate">
   </a>
   <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
@@ -15,15 +13,16 @@
     </span>
   </button>
   <div class="collapse navbar-collapse list-Item" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto gap-4">
+    <ul class="navbar-nav mx-auto gap-2">
       @for ( section of sections; track $index) {
         <li class="nav-item">
-          <a class="nav-link rounded-2 px-3 px-sm-0"
+          <a class="nav-link rounded-2 px-3"
             href="javascript:void(0)"
             (click)="scrollToSection(section.id)"
             [ngClass]="{
               'active': activeLink === section.id,
-              }">
+            }"
+            >
             {{ section.name | translate }}
           </a>
         </li>
@@ -35,8 +34,8 @@
         <button class="btn btn-lang py-0 px-3 rounded-pill text-white" (click)="switchLang()">{{lang.toUpperCase()}}</button>
       </li>
       <li class="nav-item d-flex align-items-center">
-        <button class="second-btn rounded-5">
-          <a class="text-white">{{'navbar.getStart' | translate}}</a>
+        <button class="btn btn-lang py-0 px-3 rounded-pill text-white">
+          <a class="text-white" (click)="scrollToSection('contact-us')">{{'navbar.getStart' | translate}}</a>
         </button>
       </li>
     </ul>

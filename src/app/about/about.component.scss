@@ -1,34 +1,72 @@
-$mainColor : #588CBC;
-$second-color:#588cbc97;
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
 .about{
   background: linear-gradient(to top, #ffffffd3, #ffffffd3), url('/assets/image/about-image/about-us.png');
   background-repeat: no-repeat;
   background-position: end center;
-  .container{
-    border-radius: 30px;
-  }
   .about-img{
+    position: relative;
     img{
-      width: 85%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      width: 80%;
+      border-left:20px solid $mainColor;
+      transition: all .2s;
+      &:hover{
+       border-left:0 solid $mainColor;;
+      }
+    }
+    .count-box{
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transition: all .2s;
+      &:hover{
+        border: 2px solid #fff;
+      }
     }
   }
   .about-info{
     .about-title{
-      border: 2px solid $mainColor;
+      border-bottom: 3px solid $mainColor;
+      font-weight: 800;
+      font-size: 38px;
+      transition: all .2s;
       width: fit-content;
-      .line{
-        width: 20px;
-        height: 8px;
-        margin-top: 12px;
-      }
-      h3{
-        font-size: 24px;
+      color: $mainColor;
+      &:hover{
+        border-top: 3px solid $mainColor;
+        border-bottom: none;
       }
     }
 
     .about-content{
-      p{
-        color: #222;
+      color: $mainColor;
+      transition: all .2s;
+      &:dir(rtl) {
+        border-left: none;
+        border-right: 5px solid #aaa;
+      }
+
+      &:dir(ltr) {
+        border-left: 5px solid #aaa;
+        border-right: none;
+      }
+
+      &:hover{
+        border-width: 3px;
+        border-color: $mainColor;
+      }
+    }
+
+    .about-tabs{
+      .nav-tabs .nav-link {
+        background-color: transparent;
+        color: $mainColor;
+        &.active{
+          background-color: $mainColor;
+          color: #fff;
+        }
       }
     }
   }

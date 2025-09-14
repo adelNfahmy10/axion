@@ -1,6 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-$mainColor : #588CBC;
-$second-color:#588cbc97;
+$mainColor : #0C4C93;
+$second-color:#0C4C9397;
+
+@font-face {
+  font-family: 'DINNextArabic';
+  src: url('assets/fonts/DINNextLTArabic-Regular-3.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*:not(i){
+  font-family: 'DINNextArabic', sans-serif !important;
+}
+
 html[dir="ltr"] {
   direction: ltr;
   text-align: left;
@@ -10,9 +21,7 @@ html[dir="rtl"] {
   direction: rtl;
   text-align: right;
 }
-*{
-  font-family: "Raleway", sans-serif;
-}
+
 .main-color{
   color:$mainColor
 }

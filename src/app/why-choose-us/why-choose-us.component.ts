@@ -1,6 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-why-choose-us',
@@ -11,45 +10,6 @@ import { SwiperOptions } from 'swiper/types';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class WhyChooseUsComponent {
-  whyItems = [
-    {
-      icon:'assets/image/why-chooes-us-image/icon-1.png',
-      alt:'whyUs.items.experienceTitle',
-      title: "whyUs.items.experienceTitle",
-      desc:  "whyUs.items.experienceDesc"
-    },
-    {
-      icon:'assets/image/why-chooes-us-image/icon-2.png',
-      alt:'whyUs.items.transparencyTitle',
-      title: "whyUs.items.transparencyTitle",
-      desc: "whyUs.items.transparencyDesc"
-    },
-    {
-      icon:'assets/image/why-chooes-us-image/icon-3.png',
-      alt:'whyUs.items.supportTitle',
-      title: "whyUs.items.supportTitle",
-      desc: "whyUs.items.supportDesc"
-    },
-    {
-      icon:'assets/image/why-chooes-us-image/icon-4.png',
-      alt:'whyUs.items.costTitle',
-      title: "whyUs.items.costTitle",
-      desc: "whyUs.items.costDesc"
-    },
-    {
-      icon:'assets/image/why-chooes-us-image/icon-5.png',
-      alt:'whyUs.items.specializationTitle',
-      title: "whyUs.items.specializationTitle",
-      desc: "whyUs.items.specializationDesc"
-    },
-    {
-      icon:'assets/image/why-chooes-us-image/icon-6.png',
-      alt:'whyUs.items.riskTitle',
-      title: "whyUs.items.riskTitle",
-      desc: "whyUs.items.riskDesc"
-    }
-  ];
-
   mainAccordion = [
     {
       title: "whyUs.mainAccordion.experience.title",
@@ -117,27 +77,4 @@ export class WhyChooseUsComponent {
       desc: "whyUs.servicesAccordion.riskManagement.desc"
     },
   ];
-
-
-   swiperConfig: SwiperOptions = {
-    slidesPerView: 3,
-    spaceBetween: 50,
-    centeredSlides: true,
-    loop:true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      }
-    }
-  };
 }

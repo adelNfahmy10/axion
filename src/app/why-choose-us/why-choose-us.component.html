@@ -1,39 +1,13 @@
 <section id="why-us" class="why-us py-5">
+  <div class="overlay"></div>
   <div class="container">
-    <div class="title d-flex gap-1">
-      <span class="px-3 py-1 rounded-5 main-bg">{{'whyUs.why' | translate}}</span>
-      <h3>{{'whyUs.chooseUs' | translate}}</h3>
-    </div>
-
-    <swiper-container dir="ltr" [slides-per-view]="swiperConfig.slidesPerView"
-      [space-between]="swiperConfig.spaceBetween"
-      [breakpoints]="swiperConfig.breakpoints"
-      [loop]="swiperConfig.loop"
-      autoplay-delay="2500" autoplay-disable-on-interaction="false" centered-slides="true">
-      @for (item of whyItems; track $index) {
-        <swiper-slide>
-          <div class="why-box shadow wow p-3 fadeInUp rounded-5 text-center d-flex flex-column justify-content-evenly align-items-center h-100">
-            <div class="why-img d-flex justify-content-center align-items-center">
-              <img loading="lazy" [src]="item.icon" [alt]="item.alt | translate">
-            </div>
-            <div class="why-info">
-              <h5 class="my-3">{{item.title | translate}}</h5>
-              <p>{{item.desc | translate}}</p>
-            </div>
-            <div class="why-btn">
-              <button class="main-btn rounded-3">{{'hero.learnMore' | translate}}</button>
-            </div>
-          </div>
-        </swiper-slide>
-      }
-    </swiper-container>
-
+    <h3 class="title-why mx-auto mb-4">{{'whyUs.title' | translate}}</h3>
 
     <div class="row g-3">
       <div class="col-md-6">
         <div class="accordion accordion-flush" id="mainAccordion">
           @for(item of mainAccordion; track $index){
-            <div class="accordion-item">
+            <div class="accordion-item wow bounceInUp">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#main-collapse' + $index" aria-expanded="false" [attr.aria-controls]="'main-collapse' + $index">
                   {{item.title | translate}}
@@ -52,7 +26,7 @@
       <div class="col-md-6">
         <div class="accordion accordion-flush" id="servicesAccordion">
           @for(item of servicesAccordion; track $index){
-            <div class="accordion-item">
+            <div class="accordion-item wow bounceInUp">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#service-collapse' + $index" aria-expanded="false" [attr.aria-controls]="'service-collapse' + $index">
                   {{item.title | translate}}
@@ -69,5 +43,4 @@
       </div>
     </div>
   </div>
-  <img loading="lazy" src="assets/image/why-chooes-us-image/shape3.svg" class="start-image" alt="">
 </section>

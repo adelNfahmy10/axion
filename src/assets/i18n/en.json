@@ -7,11 +7,13 @@
     "features": "Features",
     "services": "Services",
     "clients": "Clients",
+    "contact-us": "Contact Us",
     "getStart": "Get Started"
   },
 
   "hero": {
-    "title": "Financial Consulting That Makes a Real Difference",
+    "title": "Financial Consulting That",
+    "titleEffect" : "Makes a Real Difference",
     "subtitle": "We provide innovative financial and consulting solutions that combine expertise and efficiency, supporting our clients in overcoming challenges, growing their businesses, and achieving their goals effectively.",
     "startNow": "Start Now",
     "learnMore": "Learn More"
@@ -20,7 +22,7 @@
   "about": {
     "title": "About Us",
     "heading": "Our Vision in Delivering Excellence...",
-    "content": "We are a company specialized in providing modern consulting and financial solutions, with a team of experts possessing deep experience in management, finance, and strategic development. We assist our clients in addressing financial and administrative challenges through accurate analysis of their needs and offering practical, actionable strategies. Quality and innovation are at the core of our services, ensuring our clients achieve the best results and grow their businesses sustainably with distinction and success.",
+    "content": "We provide modern financial solutions and expert strategies to help businesses grow sustainably and successfully.",
     "contactUs": "Contact Us",
     "companyTitle": "Axion"
   },
@@ -29,30 +31,180 @@
     "title": "Our Services",
     "items": {
       "financingTitle": "Financing Solutions",
+      "financingDesc": [
+        "Provide a wide range of tailored financing options for individuals and businesses.",
+        "Facilitate access to loans and investments with competitive terms.",
+        "Offer flexible repayment plans to support financial stability.",
+        "Deliver expert advice on choosing the most suitable financing strategy.",
+        "Assist clients in managing risks and reducing financial burdens."
+      ],
+
       "bookkeepingTitle": "Bookkeeping Management",
+      "bookkeepingDesc": [
+        "Maintain accurate and up-to-date financial records.",
+        "Organize invoices, receipts, and transactions efficiently.",
+        "Ensure compliance with accounting standards.",
+        "Provide regular reports for better financial decision-making.",
+        "Streamline bookkeeping processes using modern tools."
+      ],
+
       "taxTitle": "Zakat & Tax Consulting",
+      "taxDesc": [
+        "Offer guidance on zakat calculation and compliance.",
+        "Provide tax planning strategies to minimize liabilities.",
+        "Ensure timely filing and reporting of taxes.",
+        "Advise on regulatory requirements and updates.",
+        "Support businesses during tax audits and assessments."
+      ],
+
       "payrollTitle": "Payroll & Contract Management",
+      "payrollDesc": [
+        "Process employee salaries accurately and on time.",
+        "Manage employment contracts and compliance requirements.",
+        "Handle deductions, benefits, and allowances.",
+        "Ensure adherence to labor laws and regulations.",
+        "Provide payroll reports and analytics for management."
+      ],
+
       "mergersTitle": "Mergers & Acquisitions Consulting",
+      "mergersDesc": [
+        "Support businesses in evaluating potential mergers and acquisitions.",
+        "Conduct financial and operational due diligence.",
+        "Provide strategic advice for smooth integration.",
+        "Assist in valuation and negotiation processes.",
+        "Identify risks and opportunities in M&A deals."
+      ],
+
       "restructuringTitle": "Restructuring",
+      "restructuringDesc": [
+        "Redesign organizational structures to improve efficiency.",
+        "Develop turnaround strategies for struggling businesses.",
+        "Optimize operations to reduce costs and increase profitability.",
+        "Support management in implementing restructuring plans.",
+        "Ensure compliance during restructuring transitions."
+      ],
+
       "consultingTitle": "Financial & Professional Consulting",
+      "consultingDesc": [
+        "Provide expert financial analysis and guidance.",
+        "Support strategic business planning and execution.",
+        "Advise on investments, budgeting, and resource allocation.",
+        "Deliver professional insights to optimize growth.",
+        "Assist in solving complex financial challenges."
+      ],
+
       "reportingTitle": "Management & Financial Reporting",
+      "reportingDesc": [
+        "Prepare clear and accurate financial statements.",
+        "Generate management reports for better decision-making.",
+        "Provide insights into business performance and KPIs.",
+        "Ensure compliance with accounting standards.",
+        "Automate reporting processes for efficiency."
+      ],
+
       "costAccountingTitle": "Cost Accounting",
+      "costAccountingDesc": [
+        "Analyze and allocate costs accurately.",
+        "Support pricing decisions through cost analysis.",
+        "Identify cost-saving opportunities.",
+        "Provide detailed cost reports for management.",
+        "Improve efficiency with proper cost control systems."
+      ],
+
       "trainingTitle": "Training",
+      "trainingDesc": [
+        "Provide workshops on financial and business management.",
+        "Train staff on accounting and compliance practices.",
+        "Offer leadership and professional development programs.",
+        "Conduct technical training for business systems.",
+        "Empower employees with practical knowledge and skills."
+      ],
+
       "riskAssessmentTitle": "Risk Assessment",
+      "riskAssessmentDesc": [
+        "Identify and evaluate potential business risks.",
+        "Develop risk mitigation and prevention strategies.",
+        "Ensure compliance with risk management regulations.",
+        "Provide detailed risk reports and recommendations.",
+        "Support businesses in building resilience."
+      ],
+
       "franchiseTitle": "Franchising",
+      "franchiseDesc": [
+        "Support businesses in creating franchise models.",
+        "Develop franchise agreements and documentation.",
+        "Advise on franchise growth strategies.",
+        "Ensure compliance with franchise laws and standards.",
+        "Assist franchisees with operational setup."
+      ],
+
       "techConsultingTitle": "Technology Consulting",
+      "techConsultingDesc": [
+        "Provide guidance on adopting modern technologies.",
+        "Support digital transformation strategies.",
+        "Optimize IT infrastructure for business efficiency.",
+        "Advise on software and system implementations.",
+        "Ensure cybersecurity and data protection compliance."
+      ],
+
       "uxConsultingTitle": "User Experience Consulting",
+      "uxConsultingDesc": [
+        "Analyze customer journeys to improve usability.",
+        "Design user-friendly interfaces and processes.",
+        "Enhance digital experiences across platforms.",
+        "Conduct usability testing for continuous improvement.",
+        "Support businesses in aligning UX with goals."
+      ],
+
       "dataAnalysisTitle": "Data Analysis",
+      "dataAnalysisDesc": [
+        "Collect and process business data effectively.",
+        "Provide insights through advanced analytics.",
+        "Support decision-making with data-driven strategies.",
+        "Visualize trends with clear dashboards and reports.",
+        "Help businesses leverage data for growth."
+      ],
+
       "isoTitle": "ISO Certification Services",
+      "isoDesc": [
+        "Guide businesses in achieving ISO certifications.",
+        "Prepare required documentation and processes.",
+        "Ensure compliance with ISO standards.",
+        "Support audits and certification assessments.",
+        "Provide continuous improvement strategies."
+      ],
+
       "contractorsTitle": "Contractor Classification",
+      "contractorsDesc": [
+        "Assist contractors in meeting classification requirements.",
+        "Prepare necessary documentation and applications.",
+        "Support compliance with industry regulations.",
+        "Provide guidance on improving classification levels.",
+        "Ensure smooth approval from authorities."
+      ],
+
       "governanceTitle": "Governance, Policies & Procedures",
-      "feasibilityTitle": "Feasibility Studies for Projects"
-    }
+      "governanceDesc": [
+        "Develop governance frameworks for organizations.",
+        "Design clear policies and procedures.",
+        "Ensure compliance with corporate governance standards.",
+        "Support transparency and accountability.",
+        "Strengthen internal controls and efficiency."
+      ],
+
+      "feasibilityTitle": "Feasibility Studies for Projects",
+      "feasibilityDesc": [
+        "Conduct financial and market feasibility analysis.",
+        "Evaluate risks and opportunities for new projects.",
+        "Prepare detailed feasibility reports for investors.",
+        "Support decision-making with accurate data.",
+        "Ensure sustainable project planning and execution."
+      ]
+    },
+    "showMore": "Show More"
   },
 
   "whyUs": {
-    "why": "Why",
-    "chooseUs": "Choose Us",
     "title": "Why Choose Us.",
     "items": {
       "experienceTitle": "Experience & Professionalism",
@@ -139,6 +291,29 @@
 
   "clients": {
     "title": "Our Clients"
+  },
+
+  "contactUs":{
+    "title":"Contact Us",
+    "subTitle":"Please send us your Request for a Quote or feedback.",
+    "form":{
+      "labels":{
+        "Facility":"Facility Name",
+        "Name":"Name",
+        "Administrative":"Administrative Title",
+        "Email":"Email",
+        "Mobile":"Mobile Number",
+        "Service":"Service",
+        "Message":"Your Message",
+        "Send":"Send"
+      }
+    },
+    "contactInfo":{
+      "Mobile":"Mobile Number",
+      "WhatsApp":"WhatsApp",
+      "Email":"Email",
+      "Location":"Location"
+    }
   },
 
   "footer": {

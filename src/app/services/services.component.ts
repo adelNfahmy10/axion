@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
 
@@ -11,85 +11,128 @@ import { SwiperOptions } from 'swiper/types';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ServicesComponent{
-  services = [
+  servicesLimit = 6; // البداية 6 عناصر
+
+  showMore() {
+    this.servicesLimit += 6; // كل مرة يزود 6 عناصر
+  }
+
+  services:any = [
     {
-      image:'../../assets/image/service-image/Financing-icon.png',
+      id: 1,
+      image: '../../assets/image/service-image/Financing-icon.png',
       title: "services.items.financingTitle",
+      list: "services.items.financingDesc",
     },
     {
-      image:'../../assets/image/service-image/Restriction-icon.png',
+      id: 2,
+      image: '../../assets/image/service-image/Restriction-icon.png',
       title: "services.items.bookkeepingTitle",
+      list: "services.items.bookkeepingDesc",
     },
     {
-      image:'../../assets/image/service-image/Consultations-icon.png',
+      id: 3,
+      image: '../../assets/image/service-image/Consultations-icon.png',
       title: "services.items.taxTitle",
+      list: "services.items.taxDesc",
     },
     {
-      image:'../../assets/image/service-image/Management-icon.png',
+      id: 4,
+      image: '../../assets/image/service-image/Management-icon.png',
       title: "services.items.payrollTitle",
+      list: "services.items.payrollDesc",
     },
     {
-      image:'../../assets/image/service-image/Merger-icon.png',
+      id: 5,
+      image: '../../assets/image/service-image/Merger-icon.png',
       title: "services.items.mergersTitle",
+      list: "services.items.mergersDesc",
     },
     {
-      image:'../../assets/image/service-image/restructuring-icon.png',
+      id: 6,
+      image: '../../assets/image/service-image/restructuring-icon.png',
       title: "services.items.restructuringTitle",
+      list: "services.items.restructuringDesc",
     },
     {
-      image:'../../assets/image/service-image/professional-consulting-icon.png',
+      id: 7,
+      image: '../../assets/image/service-image/professional-consulting-icon.png',
       title: "services.items.consultingTitle",
+      list: "services.items.consultingDesc",
     },
     {
-      image:'../../assets/image/service-image/financial-reports-icon.png',
+      id: 8,
+      image: '../../assets/image/service-image/financial-reports-icon.png',
       title: "services.items.reportingTitle",
+      list: "services.items.reportingDesc",
     },
     {
-      image:'../../assets/image/service-image/Costaccounting-icon.png',
+      id: 9,
+      image: '../../assets/image/service-image/Costaccounting-icon.png',
       title: "services.items.costAccountingTitle",
+      list: "services.items.costAccountingDesc",
     },
     {
-      image:'../../assets/image/service-image/traning-icon.png',
+      id: 10,
+      image: '../../assets/image/service-image/traning-icon.png',
       title: "services.items.trainingTitle",
+      list: "services.items.trainingDesc",
     },
     {
-      image:'../../assets/image/service-image/riskassessment-icon.png',
+      id: 11,
+      image: '../../assets/image/service-image/riskassessment-icon.png',
       title: "services.items.riskAssessmentTitle",
+      list: "services.items.riskAssessmentDesc",
     },
     {
-      image:'../../assets/image/service-image/Franchise-icon.png',
+      id: 12,
+      image: '../../assets/image/service-image/Franchise-icon.png',
       title: "services.items.franchiseTitle",
+      list: "services.items.franchiseDesc",
     },
     {
-      image:'../../assets/image/service-image/Technical-software-icon.png',
+      id: 13,
+      image: '../../assets/image/service-image/Technical-software-icon.png',
       title: "services.items.techConsultingTitle",
+      list: "services.items.techConsultingDesc",
     },
     {
-      image:'../../assets/image/service-image/ux-icon.png',
+      id: 14,
+      image: '../../assets/image/service-image/ux-icon.png',
       title: "services.items.uxConsultingTitle",
+      list: "services.items.uxConsultingDesc",
     },
     {
-      image:'../../assets/image/service-image/data-analysis-icon.png',
+      id: 15,
+      image: '../../assets/image/service-image/data-analysis-icon.png',
       title: "services.items.dataAnalysisTitle",
+      list: "services.items.dataAnalysisDesc",
     },
     {
-      image:'../../assets/image/service-image/iso-icon.png',
+      id: 16,
+      image: '../../assets/image/service-image/iso-icon.png',
       title: "services.items.isoTitle",
+      list: "services.items.isoDesc",
     },
     {
-      image:'../../assets/image/service-image/Contractor-icon.png',
+      id: 17,
+      image: '../../assets/image/service-image/Contractor-icon.png',
       title: "services.items.contractorsTitle",
+      list: "services.items.contractorsDesc",
     },
     {
-      image:'../../assets/image/service-image/icon-9.png',
+      id: 18,
+      image: '../../assets/image/service-image/icon-9.png',
       title: "services.items.governanceTitle",
+      list: "services.items.governanceDesc",
     },
     {
-      image:'../../assets/image/service-image/Feasibility-icon.png',
+      id: 19,
+      image: '../../assets/image/service-image/Feasibility-icon.png',
       title: "services.items.feasibilityTitle",
+      list: "services.items.feasibilityDesc",
     },
   ];
-
 
   swiperConfig: SwiperOptions = {
     slidesPerView: 5,

@@ -1,51 +1,30 @@
 <section id="services" class="services">
+  <div class="overlay"></div>
   <div class="container">
-    <h2 class="title-section mb-4">{{'services.title' | translate}}</h2>
-
-    <swiper-container dir="rtl" [slides-per-view]="swiperConfig.slidesPerView"
-      [space-between]="swiperConfig.spaceBetween"
-      [breakpoints]="swiperConfig.breakpoints"
-      [loop]="swiperConfig.loop"
-      autoplay-delay="2000" autoplay-disable-on-interaction="false" centered-slides="true">
-      @for (item of services.slice(0, 10); track $index) {
-        <swiper-slide>
-          <div class="services-box wow p-3 fadeInUp rounded-5 text-center">
-            <div class="services-img d-flex justify-content-center align-items-center">
+    <h2 class="title-section mx-auto mb-4 wow bounceInUp">{{'services.title' | translate}}</h2>
+    <div class="row g-3">
+      @for (item of services.slice(0,servicesLimit); track $index) {
+        <div class="col-md-4">
+          <div class="services-box d-flex flex-column justify-content-center align-items-center wow bounceInUp p-3  rounded-5">
+            <div class="services-img d-flex flex-column justify-content-center align-items-center gap-3">
               <img loading="lazy" [src]="item.image" [alt]="item.image | translate">
+              <h5 class="text-center">{{item.title | translate}}</h5>
             </div>
             <div class="services-info">
-              <span class="my-3">{{item.title | translate}}</span>
-            </div>
-            <div>
-              <i class="fa-solid fa-location-arrow cr"></i>
-            </div>
-          </div>
-        </swiper-slide>
-      }
-    </swiper-container>
-
-
-    <swiper-container dir="ltr" [slides-per-view]="swiperConfig.slidesPerView"
-      [space-between]="swiperConfig.spaceBetween"
-      [breakpoints]="swiperConfig.breakpoints"
-      [loop]="swiperConfig.loop"
-      autoplay-delay="2000" autoplay-disable-on-interaction="false" centered-slides="true">
-      @for (item of services.slice(10); track $index) {
-        <swiper-slide>
-          <div class="services-box wow p-3 fadeInUp rounded-5 text-center">
-            <div class="services-img d-flex justify-content-center align-items-center">
-              <img loading="lazy" [src]="item.image" [alt]="item.image | translate">
-            </div>
-            <div class="services-info">
-              <span class="my-3">{{item.title | translate}}</span>
-            </div>
-            <div>
-              <i class="fa-solid fa-location-arrow cr"></i>
+              <ul class="text-start main-color fw-medium">
+                @for (point of (item.list | translate); track $index) {
+                  <li>{{ point | translate }}</li>
+                }
+              </ul>
             </div>
           </div>
-        </swiper-slide>
+        </div>
       }
-    </swiper-container>
+      @if (servicesLimit < services.length) {
+        <div class="text-center mt-4">
+          <button class="btn main-btn wow rotateInDownLeft" (click)="showMore()">{{'services.showMore' | translate}}</button>
+        </div>
+      }
+    </div>
   </div>
-  <img loading="lazy" src="assets/image/service-image/shape2.svg" class="arrow-image" alt="axion">
 </section>
